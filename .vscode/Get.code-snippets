@@ -1,0 +1,26 @@
+{
+    "Componente React Native": {
+        "scope": "javascript,typescript",
+        "prefix": "get",
+        "body": [
+            "app.get(\"$1\", (req, res) => {",
+            "\tcors(req, res, () => {",
+            "\t\tdb.collection(\"$2\")",
+            "\t\t\t.get()",
+            "\t\t\t.then((snapshot) => {",
+            "\t\t\t\tlet r = {",
+            "\t\t\t\t\ttodo: []",
+            "\t\t\t\t}",
+            "",
+            "\t\t\t\tsnapshot.forEach(item => {",
+            "\t\t\t\t\tr.todo.push(item.data())",
+            "\t\t\t\t})",
+            "",
+            "\t\t\t\tres.status(200).send(r)",
+            "\t\t\t})",
+            "\t\t})",
+            "})",
+        ],
+        "description": "Base de um Get Firebase"
+    }
+}

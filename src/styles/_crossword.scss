@@ -1,0 +1,22 @@
+$letter-size: 28px;
+$border-size: 1px;
+$field-empty-color: #FFF;
+$field-full-color: #000;
+
+.crossword {
+    width: $letter-size * 20;
+
+    > div {
+        display: flex;
+
+        span {
+            width: $letter-size;
+            height: $letter-size;
+            border: $border-size solid $field-empty-color;
+            
+            &.field-full {
+                border: $border-size solid $field-full-color;
+            }
+        }
+    }
+}

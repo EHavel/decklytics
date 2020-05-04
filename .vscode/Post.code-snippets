@@ -1,0 +1,18 @@
+{
+    "Componente React Native": {
+        "scope": "javascript,typescript",
+        "prefix": "post",
+        "body": [
+            "app.post(\"$1\", (req, res) => {",
+            "\tcors(req, res, () => {",
+            "\t\tdb.collection(\"$2\")",
+            "\t\t\t.add(req.body)",
+            "\t\t\t.then((ref) => {",
+            "\t\t\t\tres.status(200).send({})",
+            "\t\t})",
+            "\t})",
+            "})"
+        ],
+        "description": "Base de componente React Native"
+    }
+}
