@@ -1,0 +1,60 @@
+.filter {
+    position: fixed;
+    overflow-y: scroll;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    background: #212121;
+    width: 300px;
+
+    h2 {
+        color: #FFF;
+        font-size: 1.8em;
+        font-weight: 700;
+        padding: 30px 16px;
+        border-bottom: 1px solid #161616;
+    }
+
+    .filter-container {
+        border-top: 1px solid #393939;
+
+        h3 {
+            color: #A2A2A2;
+            font-size: 1.4em;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding: 16px;
+        }
+
+        .filter-content {
+
+            .filter-item {
+                cursor: pointer;
+                padding: 8px 16px;
+                display: block;
+                font-size: 1.4em;
+                line-height: 1.8em;
+                font-weight: 400;
+                color: #ddd;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                opacity: .3;
+
+                img {
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    height: 24px;
+                    width: 24px;
+                }
+
+                &.filter-active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

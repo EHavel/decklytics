@@ -1,9 +1,13 @@
-.header {
-    padding: 16px;
-    font-weight: bold;
+header {
+    background: #212121;
+    height: 50px;
 
-    img {
-        width: 100px;
-        height: 100px;
+    .logo img {
+        background: #333333;
+        padding: 15px 24px;
+    }
+
+    .lor-logo {
+        padding: 8px 24px;
     }
 }

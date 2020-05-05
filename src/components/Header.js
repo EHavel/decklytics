@@ -1,11 +1,16 @@
 import React from 'react'
-import logo from '../assets/dinossauro.png'
+import logo from '../assets/logo.png'
+import logoLor from '../assets/lor/logo.png'
+import { Languages } from 'components'
 
 function Header() {
     return (
-        <header className="header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>Bem vindo ao RexList!</p>
+        <header>
+            <a href="/" className='logo'>
+                <img src={logo} alt="Decklytics: Deck builder for mobile games" />
+            </a>
+            <img src={logoLor} className="lor-logo" alt="Legends of Runeterra Best decks" />
+            <Languages />
         </header>
     )
 }

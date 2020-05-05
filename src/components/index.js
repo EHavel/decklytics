@@ -1,9 +1,11 @@
 import Header from './Header'
-import TaskList from './TaskList'
-import Crossword from './Crossword'
+import Filter from './Filter'
+import Cards from './Cards'
+import Languages from './Languages'
 
 export {
     Header,
-    TaskList,
-    Crossword
+    Filter,
+    Cards,
+    Languages,
 }
