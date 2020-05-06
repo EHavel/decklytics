@@ -11,11 +11,16 @@ function Cards() {
     }
 
     const renderCards = () => {
-        return cards.map(item => {
+        let list = cards.filter(item => {
             if (!checkRegion(item.regionRef)) return false
-
-            return renderCard(item)
+            return true
         })
+
+        if (list.length > 0) {
+            return (<ul>{list.map(item => renderCard(item))}</ul>)
+        } else {
+            return (<div className="cards-empty">No cards with this filter</div>)
+        }
     }
 
     const renderCard = (card) => (
@@ -31,10 +36,7 @@ function Cards() {
 
     return (
         <div className="cards">
-            <ul>{renderCards()}</ul>
-            {cards.length > 0 && (
-                <div className="cards-empty">No cards with this filter</div>
-            )}
+            {renderCards()}
         </div>
     )
 }

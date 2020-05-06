@@ -31,14 +31,14 @@ const Filter = () => {
         <div className="filter">
             <h2>Filter</h2>
             <div className="filter-container">
-                <div class="filter-header">
+                <div className="filter-header">
                     <h3>Region</h3>
                     <button
                         onClick={() => clearRegionFilter()}>
                         Clear all
                 </button>
                 </div>
-                <span class="clear" />
+                <span className="clear" />
                 <div className="filter-content">
                     {renderFilterRegion()}
                 </div>

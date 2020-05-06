@@ -14,13 +14,13 @@
         li {
             flex: 1;
             text-align: center;
+            
+            img {
+                margin: 8px;
+                height: 320px;
+                width: 212.5px;
+            }
         }
-    }
-
-    img {
-        margin: 8px;
-        height: 320px;
-        width: 212.5px;
     }
 
     .cards-empty {
