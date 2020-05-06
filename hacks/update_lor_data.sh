@@ -15,7 +15,7 @@ basePath=_lor_data/
 setsPath=${basePath}sets/
 extractPath=${basePath}extract/
 # projeto folder
-dataPath=public/data/
+dataPath=public/data/lor/
 
 echo "reseting folders..."
 rm -rf ${dataPath}
