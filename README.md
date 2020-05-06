@@ -1,4 +1,22 @@
-# Decklytics
+![Decklytics](logo.png)
+
+## O Projeto ##
+Site de criação e analise de deck e suas características para varios jogos.
+
+## Decklytics.pro ##
+
+### Criação da v1 ###
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
+    
+## Monetização ##
 
 https://www.google.com/adsense/new/u/0/pub-5888402531823458/sites/my-sites?url=decklytics.pro
 
@@ -19,6 +37,8 @@ https://dd.b.pvp.net/1_0_0/set1-lite-en_us.zip
 ➜  input magick mogrify -resize 34% -path ../output -format webp *.png
 
 
+## Línguas suportadas ##
+
 | CODE  |	LANGUAGE                    |
 | ----- | ----------------------------- |
 | pt_br |   Português (Brazil)          |
@@ -30,20 +50,34 @@ https://dd.b.pvp.net/1_0_0/set1-lite-en_us.zip
 | ja_jp |	Japanese (Japan)            |
 | ko_kr |	Korean (Korea)              |
 
-https://dd.b.pvp.net/latest/set1-lite-pt_br.zip
-https://dd.b.pvp.net/latest/set1-lite-de_de.zip
-https://dd.b.pvp.net/latest/set1-lite-en_us.zip
-https://dd.b.pvp.net/latest/set1-lite-es_es.zip
-https://dd.b.pvp.net/latest/set1-lite-fr_fr.zip
-https://dd.b.pvp.net/latest/set1-lite-it_it.zip
-https://dd.b.pvp.net/latest/set1-lite-ja_jp.zip
-https://dd.b.pvp.net/latest/set1-lite-ko_kr.zip
+## Integração com Legends of Runeterra ##
 
-https://dd.b.pvp.net/latest/set2-lite-pt_br.zip
-https://dd.b.pvp.net/latest/set2-lite-de_de.zip
-https://dd.b.pvp.net/latest/set2-lite-en_us.zip
-https://dd.b.pvp.net/latest/set2-lite-es_es.zip
-https://dd.b.pvp.net/latest/set2-lite-fr_fr.zip
-https://dd.b.pvp.net/latest/set2-lite-it_it.zip
-https://dd.b.pvp.net/latest/set2-lite-ja_jp.zip
-https://dd.b.pvp.net/latest/set2-lite-ko_kr.zip
+Documentação para desenvolvedores
+
+[developer.riotgames.com/docs/lor](https://developer.riotgames.com/docs/lor)
+
+### Core Bundles ###
+The core bundles contain foundational assets and data that are shared across cards in all sets. This includes information like factions, icons, queues, rules, etc. Core bundles are available over the internet at the following urls:
+
+Latest
+https://dd.b.pvp.net/latest/core-en_us.zip
+
+Versioned
+https://dd.b.pvp.net/1_0_0/core-en_us.zip
+
+### Set Bundles ###
+The set bundles contain assets and data for cards released in a specific set. Set bundles are available in two versions; full and lite. The full set bundle contains the card art, alternative art, and full size illustrations for each card. The lite version only contains the card art and the alternative art making the lite version significantly smaller in size. Set bundles are available over the internet at the following urls:
+
+Latest
+[set1 full] https://dd.b.pvp.net/latest/set1-en_us.zip
+[set1 lite] https://dd.b.pvp.net/latest/set1-lite-en_us.zip
+
+[set2 full] https://dd.b.pvp.net/latest/set2-en_us.zip
+[set2 lite] https://dd.b.pvp.net/latest/set2-lite-en_us.zip
+
+Versioned
+[set1 full] https://dd.b.pvp.net/1_0_0/set1-en_us.zip
+[set1 lite] https://dd.b.pvp.net/1_0_0/set1-lite-en_us.zip
+
+[set2 full] https://dd.b.pvp.net/1_0_0/set2-en_us.zip
+[set2 lite] https://dd.b.pvp.net/1_0_0/set2-lite-en_us.zip
