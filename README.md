@@ -94,3 +94,6 @@ Os pacotes configuráveis ​​contêm ativos e dados para cartões liberados e
 * [set1 lite] https://dd.b.pvp.net/1_0_0/set1-lite-en_us.zip
 * [set2 full] https://dd.b.pvp.net/1_0_0/set2-en_us.zip
 * [set2 lite] https://dd.b.pvp.net/1_0_0/set2-lite-en_us.zip
+
+#### Gerar Deck ID ####
+* https://github.com/SwitchbladeBot/runeterra
