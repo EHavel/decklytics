@@ -32,6 +32,9 @@ function Cards() {
     return (
         <div className="cards">
             <ul>{renderCards()}</ul>
+            {cards.length > 0 && (
+                <div className="cards-empty">No cards with this filter</div>
+            )}
         </div>
     )
 }

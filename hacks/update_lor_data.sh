@@ -17,18 +17,20 @@ echo
 regionsCode=(pt_br en_us ja_jp de_de es_es fr_fr it_it ko_kr)
 regionsName=(Português English 日本語 Deutsch Español Français Italiano 한국어)
 
-languagesJSON="["
+echo "preparing folders..."
+dataPath=public/data/lor/
+rm -rf ${dataPath}
+mkdir ${dataPath}
 
 basePath=_lor_data/
-setsPath=${basePath}sets/
-extractPath=${basePath}extract/
-# projeto folder
-dataPath=public/data/lor/
-
-echo "preparing folders..."
-rm -rf ${dataPath}
 rm -rf ${basePath}
 mkdir ${basePath}
+
+setsPath=${basePath}sets/
+extractPath=${basePath}extract/
+
+echo "preparing language json..."
+languagesJSON="["
 
 for i in "${!regionsCode[@]}"
 do
@@ -86,8 +88,6 @@ do
     sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set2-${regionsCode[$i]}.json
 
     echo "moving ${regionsCode[$i]} datas..."
-    mkdir ${dataPath}
-
     data_region_path=${dataPath}${regionsCode[$i]}/
     mkdir ${data_region_path}
 
@@ -108,6 +108,7 @@ do
     echo "finish read ${regionsCode[$i]} data!"
 done
 
+echo
 echo "creating language json..."
 languagesJSON+="]"
 echo ${languagesJSON} > ${dataPath}language.json
@@ -115,5 +116,5 @@ echo ${languagesJSON} > ${dataPath}language.json
 echo "🔪 cleaning tracks..."
 rm -rf ${basePath}
 
-echo
 echo "Finish! 🙂"
+exit;

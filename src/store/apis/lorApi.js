@@ -1,26 +1,41 @@
 import axios from "axios"
 
 const api = axios.create({
-    baseURL: "../data/",
+    baseURL: "../data/lor/",
     headers: {
         "Accept": "application/json",
         "Content-Type": "application/json; charset=utf-8"
     }
 })
 
-const getCardsUrl = (languageCode) => {
-    return 'cards/set1-' + languageCode + '.json'
+const getCardsSet1Url = (languageCode) => {
+    return languageCode + '/set1-' + languageCode + '.json'
+}
+
+const getCardsSet2Url = (languageCode) => {
+    return languageCode + '/set2-' + languageCode + '.json'
 }
 
 const getGlobalsUrl = (languageCode) => {
-    return 'globals-' + languageCode + '.json'
+    return languageCode + '/globals-' + languageCode + '.json'
 }
 
 export const getAllCards = async (code) => {
     return new Promise(async (resolve, reject) => {
         try {
-            const response = await api.get(getCardsUrl(code))
-            resolve(response.data)
+            let response = []
+
+            const set1 = await api.get(getCardsSet1Url(code))
+            set1.data.forEach(item => {
+                response.push(item)
+            })
+
+            const set2 = await api.get(getCardsSet2Url(code))
+            set2.data.forEach(item => {
+                response.push(item)
+            })
+
+            resolve(response)
         } catch (error) {
             console.log("Algo deu ruim na API!")
             reject(error.response)

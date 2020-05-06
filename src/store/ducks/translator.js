@@ -16,11 +16,12 @@ export const actions = {
 }
 
 const INITIAL_STATE = {
-    selected: {
-        name: "English",
-        code: "en_us",
-    },
+    selected: {},
     languages: [
+        {
+            name: "English",
+            code: "en_us",
+        },
         {
             name: "Português",
             code: "pt_br",
@@ -28,10 +29,6 @@ const INITIAL_STATE = {
         {
             name: "Deutsch",
             code: "de_de",
-        },
-        {
-            name: "English",
-            code: "en_us",
         },
         {
             name: "Español",
@@ -66,7 +63,7 @@ export const reducer = (state = INITIAL_STATE, action) => {
             }
 
             let list = newState.languages.filter(item =>
-                item.code.split("_")[0] === "pt")
+                item.code.split("_")[0] === action.code)
             if (list.length > 0) {
                 initialSelected = list[0]
             }

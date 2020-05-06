@@ -1,6 +1,7 @@
 export const types = {
     SET_FILTERS: "SET_FILTERS",
     TOOGLE_REGION_FILTER: "TOOGLE_REGION_FILTER",
+    CLEAR_REGION_FILTER: "CLEAR_REGION_FILTER",
 }
 
 export const actions = {
@@ -11,6 +12,9 @@ export const actions = {
     toogleRegionFilter: (name) => ({
         type: types.TOOGLE_REGION_FILTER,
         ref: name,
+    }),
+    clearRegionFilter: () => ({
+        type: types.CLEAR_REGION_FILTER,
     })
 }
 
@@ -41,8 +45,14 @@ export const reducer = (state = INITIAL_STATE, action) => {
         case types.TOOGLE_REGION_FILTER:
             newState.regions = newState.regions.map(item => {
                 if (item.nameRef === action.ref) {
-                    item.active = !item.active;
+                    item.active = !item.active
                 }
+                return item
+            })
+            break
+        case types.CLEAR_REGION_FILTER:
+            newState.regions = newState.regions.map(item => {
+                item.active = false
                 return item
             })
             break
