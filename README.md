@@ -5,37 +5,27 @@ Site de criação e analise de deck e suas características para varios jogos.
 
 ## Decklytics.pro ##
 
-### Criação da v1 ###
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
-    
-## Monetização ##
+### Design ###
+[figma.com/file/5AtjHZtcVGIjLSMTjp01w6/Decklytics](https://www.figma.com/file/5AtjHZtcVGIjLSMTjp01w6/Decklytics)
 
-https://www.google.com/adsense/new/u/0/pub-5888402531823458/sites/my-sites?url=decklytics.pro
-
-https://dd.b.pvp.net/latest/set1-en_us.zip
-
-https://dd.b.pvp.net/latest/core-en_us.zip
-
-https://support.google.com/adsense/answer/7037624?hl=pt-BR
-
-https://imagemagick.org/script/download.php
-
-https://github.com/SwitchbladeBot/runeterra
-
-https://dd.b.pvp.net/1_0_0/set1-lite-en_us.zip
-
-➜  workspace magick ./../Downloads/01NX004.png  -resize 34% ./../Downloads/opa.png
-
-➜  input magick mogrify -resize 34% -path ../output -format webp *.png
-
+### Criação da v1 - Integração com LOR ###
+- [x] ~~design do logo~~
+- [x] ~~design da página de cartas do LOR~~
+- [x] ~~design da página criação de decks do LOR~~
+- [x] ~~design da página home do LOR~~
+- [x] ~~topo do site~~
+- [x] ~~controle de multi idiomas~~
+- [x] ~~carregamento de cartas~~
+- [ ] inclusão de banner Ads Google
+- [x] ~~filtro regiões~~
+- [ ] filtro tipos
+- [ ] filtro manas
+- [ ] botão scrollar para o topo
+- [ ] estatística do deck
+- [ ] lista de cartas do deck
+- [ ] gerar ID deck
+- [ ] listagem de decks gerados
+- [ ] listagem de decks de youtubers
 
 ## Línguas suportadas ##
 
@@ -50,6 +40,14 @@ https://dd.b.pvp.net/1_0_0/set1-lite-en_us.zip
 | ja_jp |	Japanese (Japan)            |
 | ko_kr |	Korean (Korea)              |
 
+## Script de atualização de pacotes ##
+Desenvolvido para fazer as integrações de forma automática com as produtoras dos jogos. Ele baixa os pacotes atualizados de cada jogo, otimiza e organiza para ser utilizado na nossa aplicação.
+
+Comando para atualizar pacote do LOR, ele deve ser realizado na raiz do projeto
+``` bash
+$ yarn deploy
+```
+
 ## Integração com Legends of Runeterra ##
 
 Documentação para desenvolvedores
@@ -57,27 +55,25 @@ Documentação para desenvolvedores
 [developer.riotgames.com/docs/lor](https://developer.riotgames.com/docs/lor)
 
 ### Core Bundles ###
-The core bundles contain foundational assets and data that are shared across cards in all sets. This includes information like factions, icons, queues, rules, etc. Core bundles are available over the internet at the following urls:
+Os pacotes principais contêm ativos e dados fundamentais que são compartilhados entre cartões em todos os conjuntos. Isso inclui informações como regiões, ícones, filas, regras, etc. Os pacotes principais estão disponíveis na Internet nos seguintes URLs:
 
-Latest
-https://dd.b.pvp.net/latest/core-en_us.zip
+#### Latest ####
+* https://dd.b.pvp.net/latest/core-en_us.zip
 
-Versioned
-https://dd.b.pvp.net/1_0_0/core-en_us.zip
+#### Versioned ####
+* https://dd.b.pvp.net/1_0_0/core-en_us.zip
 
 ### Set Bundles ###
-The set bundles contain assets and data for cards released in a specific set. Set bundles are available in two versions; full and lite. The full set bundle contains the card art, alternative art, and full size illustrations for each card. The lite version only contains the card art and the alternative art making the lite version significantly smaller in size. Set bundles are available over the internet at the following urls:
+Os pacotes configuráveis ​​contêm ativos e dados para cartões liberados em um conjunto específico. Pacotes configuráveis ​​estão disponíveis em duas versões; completo e leve. O pacote completo contém a arte do cartão, a arte alternativa e as ilustrações em tamanho real de cada cartão. A versão Lite contém apenas a arte do cartão e a arte alternativa, tornando a versão Lite significativamente menor em tamanho. Pacotes configuráveis ​​estão disponíveis na Internet nos seguintes URLs:
 
-Latest
-[set1 full] https://dd.b.pvp.net/latest/set1-en_us.zip
-[set1 lite] https://dd.b.pvp.net/latest/set1-lite-en_us.zip
+#### Latest ####
+* [set1 full] https://dd.b.pvp.net/latest/set1-en_us.zip
+* [set1 lite] https://dd.b.pvp.net/latest/set1-lite-en_us.zip
+* [set2 full] https://dd.b.pvp.net/latest/set2-en_us.zip
+* [set2 lite] https://dd.b.pvp.net/latest/set2-lite-en_us.zip
 
-[set2 full] https://dd.b.pvp.net/latest/set2-en_us.zip
-[set2 lite] https://dd.b.pvp.net/latest/set2-lite-en_us.zip
-
-Versioned
-[set1 full] https://dd.b.pvp.net/1_0_0/set1-en_us.zip
-[set1 lite] https://dd.b.pvp.net/1_0_0/set1-lite-en_us.zip
-
-[set2 full] https://dd.b.pvp.net/1_0_0/set2-en_us.zip
-[set2 lite] https://dd.b.pvp.net/1_0_0/set2-lite-en_us.zip
+#### Versioned ####
+* [set1 full] https://dd.b.pvp.net/1_0_0/set1-en_us.zip
+* [set1 lite] https://dd.b.pvp.net/1_0_0/set1-lite-en_us.zip
+* [set2 full] https://dd.b.pvp.net/1_0_0/set2-en_us.zip
+* [set2 lite] https://dd.b.pvp.net/1_0_0/set2-lite-en_us.zip
