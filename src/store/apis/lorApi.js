@@ -9,7 +9,7 @@ const api = axios.create({
 })
 
 const getCardsUrl = (languageCode) => {
-    return 'set1-' + languageCode + '.json'
+    return 'cards/set1-' + languageCode + '.json'
 }
 
 const getGlobalsUrl = (languageCode) => {

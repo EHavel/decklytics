@@ -79,3 +79,6 @@ node_modules/
 # Locks
 package-lock.json
 yarn.lock
+
+# Data Games
+_lor_data/

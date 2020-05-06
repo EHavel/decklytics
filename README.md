@@ -12,6 +12,8 @@ https://imagemagick.org/script/download.php
 
 https://github.com/SwitchbladeBot/runeterra
 
+https://dd.b.pvp.net/1_0_0/set1-lite-en_us.zip
+
 ➜  workspace magick ./../Downloads/01NX004.png  -resize 34% ./../Downloads/opa.png
 
 ➜  input magick mogrify -resize 34% -path ../output -format webp *.png
@@ -27,3 +29,21 @@ https://github.com/SwitchbladeBot/runeterra
 | it_it |	Italian (Italy)             |
 | ja_jp |	Japanese (Japan)            |
 | ko_kr |	Korean (Korea)              |
+
+https://dd.b.pvp.net/latest/set1-lite-pt_br.zip
+https://dd.b.pvp.net/latest/set1-lite-de_de.zip
+https://dd.b.pvp.net/latest/set1-lite-en_us.zip
+https://dd.b.pvp.net/latest/set1-lite-es_es.zip
+https://dd.b.pvp.net/latest/set1-lite-fr_fr.zip
+https://dd.b.pvp.net/latest/set1-lite-it_it.zip
+https://dd.b.pvp.net/latest/set1-lite-ja_jp.zip
+https://dd.b.pvp.net/latest/set1-lite-ko_kr.zip
+
+https://dd.b.pvp.net/latest/set2-lite-pt_br.zip
+https://dd.b.pvp.net/latest/set2-lite-de_de.zip
+https://dd.b.pvp.net/latest/set2-lite-en_us.zip
+https://dd.b.pvp.net/latest/set2-lite-es_es.zip
+https://dd.b.pvp.net/latest/set2-lite-fr_fr.zip
+https://dd.b.pvp.net/latest/set2-lite-it_it.zip
+https://dd.b.pvp.net/latest/set2-lite-ja_jp.zip
+https://dd.b.pvp.net/latest/set2-lite-ko_kr.zip

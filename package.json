@@ -24,7 +24,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "deploy": "react-scripts build && firebase deploy"
+        "deploy": "react-scripts build && firebase deploy",
+        "update-lor-data": "./hacks/update_lor_data.sh"
     },
     "eslintConfig": {
         "extends": "react-app"
