@@ -1,19 +1,31 @@
 .cards {
     position: fixed;
-    overflow-y: scroll;
-    left: 300px;
+    overflow-y: scroll;    
+    left: 328px;
     right: 0;
-    top: 50px;
+    top: $header-height;
     bottom: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 
-    ul {
-        margin: 8px;
+    &::-webkit-scrollbar { 
+        display: none;
+    }
+
+    .cards-container {
+        margin: 32px 8px;
         display: flex;
         flex-wrap: wrap;  
         
-        li {
+        a {
             flex: 1;
             text-align: center;
+            cursor: pointer;
+            transition: all .3s ease-out;
+
+            &:hover { 
+                transform: scale(1.1); 
+            }
             
             img {
                 margin: 8px;

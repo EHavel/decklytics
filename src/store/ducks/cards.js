@@ -11,16 +11,18 @@ export const actions = {
 
 const INITIAL_STATE = []
 
-const handleCards = (data) => {
-    return data.filter(item => item.collectible)
-}
+// const handleCards = (data) => {
+//     return true
+//     // return data.filter(item => item.collectible)
+// }
 
 export const reducer = (state = INITIAL_STATE, action) => {
     let newState = JSON.parse(JSON.stringify(state))
 
     switch (action.type) {
         case types.SET_CARDS:
-            newState = handleCards(action.data)
+            newState = action.data
+            // newState = handleCards(action.data)
             break
         default:
     }

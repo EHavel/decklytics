@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { CardLink } from 'components'
 
 function Cards() {
     const cards = useSelector(state => state.cards)
@@ -11,28 +12,50 @@ function Cards() {
     }
 
     const renderCards = () => {
-        let list = cards.filter(item => {
-            if (!checkRegion(item.regionRef)) return false
-            return true
-        })
+        if (cards.length > 0) {
+            let listChampion = []
+            let listEpic = []
+            let listRare = []
+            let listCommon = []
+            let list = cards.filter(item => {
+                if (!item.collectible) return false
+                if (!checkRegion(item.regionRef)) return false
+                return true
+            })
 
-        if (list.length > 0) {
-            return (<ul>{list.map(item => renderCard(item))}</ul>)
-        } else {
-            return (<div className="cards-empty">No cards with this filter</div>)
+            list.forEach(e => {
+                switch (e.rarityRef) {
+                    case "Common":
+                        listCommon.push(e)
+                        break
+                    case "Rare":
+                        listRare.push(e)
+                        break
+                    case "Champion":
+                        listChampion.push(e)
+                        break
+                    case "Epic":
+                        listEpic.push(e)
+                        break
+                    default:
+                        console.log("Carta sem categoria")
+                        break
+                }
+            })
+
+            let finalList = listChampion.concat(listEpic, listRare, listCommon)
+
+            if (finalList.length > 0) {
+                return (
+                    <div className="cards-container">{
+                        finalList.map(item => (<CardLink card={item} />))
+                    }</div>
+                )
+            } else {
+                return (<div className="cards-empty">No cards with this filter</div>)
+            }
         }
     }
-
-    const renderCard = (card) => (
-        <li key={card.cardCode}>
-            <img
-                height={320}
-                width={212.5}
-                loading="lazy"
-                alt={card.name}
-                src={card.assets[0].gameAbsolutePath} />
-        </li>
-    )
 
     return (
         <div className="cards">

@@ -1,13 +1,69 @@
-header {
-    background: #212121;
-    height: 50px;
+$header-height: 80px;
 
-    .logo img {
-        background: #333333;
-        padding: 15px 24px;
+header {
+    position: relative;
+    z-index: 99999;
+    display: flex;
+    height: $header-height;
+    border-bottom: 1px solid $color-4;
+    align-items: center;
+
+    .logo {
+        padding: 0 32px;
+        position: relative;
+        margin-top: 8px;
+        display: inline-block;
+
+        &:after {
+            content: " ";
+            background: $color-4;
+            width: 2px;
+            height: 24px;
+            position: absolute;
+            top: 50%;
+            margin-top: -14px;
+            right: 0;
+        }
     }
 
     .lor-logo {
-        padding: 8px 24px;
+        margin: 0 32px;
+    }
+
+    nav {
+        a {
+            display: inline-flex;
+            align-items: center;
+            height: $header-height;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-2;
+            padding: 0 32px;
+            font: 600 1.2em 'Signika', sans-serif;
+            border-bottom: 1px solid transparent;
+            
+            &:hover {
+                border-bottom: 1px solid $color-5;
+            }
+        }
+    }
+
+    a.button {
+        position: fixed;
+        top: 16px;
+        right: 160px+16px;
+        display: inline-flex;
+        align-items: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-2;
+        padding: 16px 32px;
+        font: 600 1.0em 'Signika', sans-serif;
+        border: 1px solid $color-4;
+        border-radius: 8px;
+
+        &:hover {
+            background: $color-4;
+        }
     }
 }

@@ -97,3 +97,8 @@ Os pacotes configuráveis ​​contêm ativos e dados para cartões liberados e
 
 #### Gerar Deck ID ####
 * https://github.com/SwitchbladeBot/runeterra
+
+### Banco de icons ###
+* https://leagueoflegends.fandom.com/wiki
+
+https://leagueoflegends.fandom.com/wiki/Card_Back_(Legends_of_Runeterra)

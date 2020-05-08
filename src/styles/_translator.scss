@@ -1,0 +1,53 @@
+.language-option {
+    display: block;
+    outline: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 24px;
+    height: $header-height;
+    text-align: left;
+    width: 160px;
+    color: $color-2;
+    font-size: 1.4em;
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    
+    &:hover {
+        border-bottom: 1px solid $color-5;
+    }
+
+    svg {
+        margin: -3px 8px -3px 0;
+    }
+
+    .seta {
+        position: absolute;
+        top: 32px;
+        right: 8px;
+    }
+}
+
+.language-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.language-container {
+    position: fixed;
+    z-index: 99999;
+    top: $header-height;
+    right: 0;
+    background: $color-1;
+    border-left: 1px solid $color-4;
+    border-bottom: 1px solid $color-4;
+
+    .language-option {
+        height: 40px;
+
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+}

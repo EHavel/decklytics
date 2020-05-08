@@ -14,11 +14,13 @@ echo
 echo "##############################################"
 echo 
 
-regionsCode=(pt_br en_us ja_jp de_de es_es fr_fr it_it ko_kr)
-regionsName=(Português English 日本語 Deutsch Español Français Italiano 한국어)
+regionsCode=(pt_br)
+# regionsCode=(pt_br en_us ja_jp de_de es_es fr_fr it_it ko_kr)
+regionsName=(Português)
+# regionsName=(Português English 日本語 Deutsch Español Français Italiano 한국어)
 
 echo "preparing folders..."
-dataPath=public/data/lor/
+dataPath=public/data/new-lor/
 rm -rf ${dataPath}
 mkdir ${dataPath}
 
@@ -48,19 +50,21 @@ do
     languagesJSON+="\"name\":\"${regionsName[$i]}\""
     languagesJSON+="}"
     
-    echo "loading ${regionsCode[$i]} sets..."
+    echo "loading ${regionsCode[$i]} bundles..."
+    rm -rf ${setsPath}
     mkdir ${setsPath}
 
     curl https://dd.b.pvp.net/latest/core-${regionsCode[$i]}.zip -o ${setsPath}core-${regionsCode[$i]}.zip
-    curl https://dd.b.pvp.net/latest/set1-lite-${regionsCode[$i]}.zip -o ${setsPath}set1-lite-${regionsCode[$i]}.zip
-    curl https://dd.b.pvp.net/latest/set2-lite-${regionsCode[$i]}.zip -o ${setsPath}set2-lite-${regionsCode[$i]}.zip
+    curl https://dd.b.pvp.net/latest/set1-${regionsCode[$i]}.zip -o ${setsPath}set1-${regionsCode[$i]}.zip
+    curl https://dd.b.pvp.net/latest/set2-${regionsCode[$i]}.zip -o ${setsPath}set2-${regionsCode[$i]}.zip
 
-    echo "extracting ${regionsCode[$i]} sets..."
+    echo "extracting ${regionsCode[$i]} bundles..."
+    rm -rf ${extractPath}
     mkdir ${extractPath}
 
     unzip -o ${setsPath}core-${regionsCode[$i]}.zip -d ${extractPath}
-    unzip -o ${setsPath}set1-lite-${regionsCode[$i]}.zip -d ${extractPath}
-    unzip -o ${setsPath}set2-lite-${regionsCode[$i]}.zip -d ${extractPath}
+    unzip -o ${setsPath}set1-${regionsCode[$i]}.zip -d ${extractPath}
+    unzip -o ${setsPath}set2-${regionsCode[$i]}.zip -d ${extractPath}
 
     echo "replacing ${regionsCode[$i]} url images..." 
     search=".png\""
@@ -114,7 +118,7 @@ languagesJSON+="]"
 echo ${languagesJSON} > ${dataPath}language.json
 
 echo "🔪 cleaning tracks..."
-rm -rf ${basePath}
+# rm -rf ${basePath}
 
 echo "Finish! 🙂"
 exit;

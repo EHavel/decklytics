@@ -2,10 +2,115 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Jost', sans-serif;
-    font-size: 10px;
+    font-family: 'Signika', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
+$color-1: #010E13;
+$color-2: #F9F9F9;
+$color-3: #C9C0A3;
+$color-4: #222C36;
+$color-5: #34C99C;
+
 body {
-    background: #181818;
+    font-size: 10px;
+    background: $color-1;
+}
+
+.background-modal {
+    background: #010E13;
+    opacity: .9;
+    position: fixed;
+    top: 0;
+    z-index: 99999999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.import-modal {
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    background: $color-1;
+    border: 1px solid $color-4;
+    text-align: center;
+    top: 20%;
+    margin-left: -250px;
+    left: 50%;
+    border-radius: 10px;
+    z-index: 99999999;
+    -webkit-box-shadow: 0px 3px 13px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 13px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 13px 2px rgba(0,0,0,0.75);
+
+    h2 {
+        font: 2.2em 'Crimson Text', serif;
+        text-transform: uppercase;
+        color: $color-3;
+        opacity: .6;
+        margin: 32px 32px 8px;
+    }
+
+    p {
+        margin: 0 32px 16px;
+        font: 400 1.4em/2.2 'Signika', sans-serif;
+        color: $color-2;
+        opacity: .6;
+    }
+
+    input {
+        text-transform: uppercase;
+        background: rgb(0, 4, 5);
+        color: #ccc;
+        outline: none;
+        border: 1px solid $color-4;
+        border-radius: 10px;
+        font: 500 1.4em 'Barlow Condensed', sans-serif;
+        padding: 16px;
+        margin: 0 32px;
+        width: 404px;
+    }
+
+    .button-import {
+        outline: none;
+        display: block;
+        cursor: pointer;
+        margin: 32px auto;
+        border: 1px solid #A37A4D;
+        background: rgb(215,198,141);
+        background: radial-gradient(circle, #ddd1ae 0%, #d7c68d 42%, #d7c68d 100%);
+        font: 600 1.8em 'Barlow Condensed', sans-serif;
+        color: $color-1;
+        text-transform: uppercase;
+        padding: 8px 64px;
+        border-radius: 10px;
+    }
+
+    .button-close {
+        cursor: pointer;
+        position: absolute;
+        -webkit-box-shadow: 0px 3px 13px 2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 3px 13px 2px rgba(0,0,0,0.75);
+        box-shadow: 0px 3px 13px 2px rgba(0,0,0,0.75);
+        top: -18px;
+        right: -18px;
+        outline: none;
+        background: $color-1;
+        height: 56px;
+        width: 56px;
+        padding: 12px;
+        border: 1px solid $color-4;
+        border-radius: 50px;
+        margin-bottom: 4px;
+    
+        svg {
+            fill: $color-3;
+        }
+    }
 }
