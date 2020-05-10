@@ -34,7 +34,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -72,7 +72,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -110,7 +110,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -144,7 +144,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -184,7 +184,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -224,7 +224,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -258,7 +258,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -296,7 +296,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -339,7 +339,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -379,7 +379,7 @@
       "MONSTRO MARINHO"
     ],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -420,7 +420,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -458,7 +458,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -498,7 +498,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -536,7 +536,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -576,7 +576,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -652,7 +652,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -688,7 +688,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -729,7 +729,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -770,7 +770,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -806,7 +806,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -845,7 +845,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -885,7 +885,7 @@
       "TESOURO"
     ],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -923,7 +923,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -963,7 +963,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -997,7 +997,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1035,7 +1035,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -1073,7 +1073,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1107,7 +1107,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1145,7 +1145,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1185,7 +1185,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -1223,7 +1223,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -1261,7 +1261,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1295,7 +1295,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1335,7 +1335,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -1371,7 +1371,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -1413,7 +1413,7 @@
       "ELITE"
     ],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1458,7 +1458,7 @@
       "MONSTRO MARINHO"
     ],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1500,7 +1500,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -1538,7 +1538,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1576,7 +1576,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -1610,7 +1610,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1650,7 +1650,7 @@
       "MONSTRO MARINHO"
     ],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1691,7 +1691,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -1733,7 +1733,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -1773,7 +1773,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -1807,7 +1807,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1849,7 +1849,7 @@
       "MONSTRO MARINHO"
     ],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -1888,7 +1888,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -1928,7 +1928,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -1968,7 +1968,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -2048,7 +2048,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2090,7 +2090,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2130,7 +2130,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2168,7 +2168,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2240,7 +2240,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2318,7 +2318,7 @@
       "TESOURO"
     ],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -2352,7 +2352,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2392,7 +2392,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -2434,7 +2434,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -2468,7 +2468,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2506,7 +2506,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -2540,7 +2540,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2584,7 +2584,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2622,7 +2622,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2656,7 +2656,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2700,7 +2700,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -2776,7 +2776,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -2818,7 +2818,7 @@
       "MONSTRO MARINHO"
     ],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2860,7 +2860,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -2901,7 +2901,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -2939,7 +2939,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -2977,7 +2977,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -3011,7 +3011,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3045,7 +3045,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -3081,7 +3081,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -3119,7 +3119,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -3159,7 +3159,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -3195,7 +3195,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3237,7 +3237,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -3278,7 +3278,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -3318,7 +3318,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3360,7 +3360,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -3394,7 +3394,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3432,7 +3432,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3475,7 +3475,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3509,7 +3509,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3543,7 +3543,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3581,7 +3581,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -3617,7 +3617,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3658,7 +3658,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3701,7 +3701,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3741,7 +3741,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -3784,7 +3784,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -3822,7 +3822,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -3858,7 +3858,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3898,7 +3898,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -3938,7 +3938,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -3978,7 +3978,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -4014,7 +4014,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -4048,7 +4048,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -4090,7 +4090,7 @@
       "MONSTRO MARINHO"
     ],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -4130,7 +4130,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -4168,7 +4168,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -4205,7 +4205,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -4246,7 +4246,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -4322,7 +4322,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -4362,7 +4362,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -4398,7 +4398,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -4442,7 +4442,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -4478,7 +4478,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -4519,7 +4519,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -4559,7 +4559,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -4597,7 +4597,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -4635,7 +4635,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -4673,7 +4673,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -4711,7 +4711,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -4789,7 +4789,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -4831,7 +4831,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -4867,7 +4867,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -4905,7 +4905,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -4945,7 +4945,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -4983,7 +4983,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -5021,7 +5021,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -5061,7 +5061,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -5103,7 +5103,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -5141,7 +5141,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -5179,7 +5179,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -5217,7 +5217,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -5255,7 +5255,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -5295,7 +5295,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -5331,7 +5331,7 @@
       "PORO"
     ],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -5365,7 +5365,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -5399,7 +5399,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -5438,7 +5438,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -5476,7 +5476,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -5512,7 +5512,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -5550,7 +5550,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -5592,7 +5592,7 @@
       "TESOURO"
     ],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -5626,7 +5626,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -5664,7 +5664,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -5707,7 +5707,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -5787,7 +5787,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -5825,7 +5825,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -5866,7 +5866,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -5906,7 +5906,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -5982,7 +5982,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -6020,7 +6020,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -6060,7 +6060,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -6098,7 +6098,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -6132,7 +6132,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -6249,7 +6249,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -6287,7 +6287,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -6325,7 +6325,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -6359,7 +6359,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -6397,7 +6397,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -6437,7 +6437,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": true
   },
   {
@@ -6478,7 +6478,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": false
   },
   {
@@ -6521,7 +6521,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Campeão",
-    "type": "Unidade",
+    "typeRef": "Units","type": "Unidade",
     "collectible": false
   },
   {
@@ -6559,7 +6559,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -6599,7 +6599,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   },
   {
@@ -6639,7 +6639,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Feitiço",
+    "typeRef": "Spells","type": "Feitiço",
     "collectible": true
   }
 ]

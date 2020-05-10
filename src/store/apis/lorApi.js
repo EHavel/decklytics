@@ -43,7 +43,7 @@ export const getAllCards = async (code) => {
     })
 }
 
-export const getAllFilters = async (code) => {
+export const getGlobals = async (code) => {
     return new Promise(async (resolve, reject) => {
         try {
             const response = await api.get(getGlobalsUrl(code))

@@ -5,6 +5,10 @@ import Cards from './Cards'
 import Translator from './Translator'
 import CardLink from './CardLink'
 import ImportDeck from './ImportDeck'
+import CardDetails from './CardDetails'
+import TagIcon from './TagIcon'
+import TitleDivider from './TitleDivider'
+import Icon from './Icon'
 
 export {
     Header,
@@ -14,4 +18,8 @@ export {
     Translator,
     CardLink,
     ImportDeck,
+    CardDetails,
+    TagIcon,
+    TitleDivider,
+    Icon,
 }

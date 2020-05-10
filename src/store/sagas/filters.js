@@ -1,7 +1,7 @@
 import { select, put, call, takeEvery } from "redux-saga/effects"
 
 import {
-    getAllFilters as getAllFiltersApi,
+    getGlobals as getGlobalsApi,
 } from 'store/apis/lorApi'
 
 import {
@@ -12,11 +12,16 @@ import {
     actions as actionsFilters,
 } from "store/ducks/filters"
 
+import {
+    actions as actionsGlobals,
+} from "store/ducks/globals"
+
 function* loadAllFilters() {
     const state = yield select();
     try {
-        const filters = yield call(getAllFiltersApi, state.translator.selected.code)
-        yield put(actionsFilters.setFilters(filters))
+        const globals = yield call(getGlobalsApi, state.translator.selected.code)
+        yield put(actionsFilters.setFilters(globals))
+        yield put(actionsGlobals.setGlobals(globals))
     } catch (error) {
         console.log("Algo deu ruim!", error)
     }

@@ -15,26 +15,9 @@
     .cards-container {
         margin: 32px 8px;
         display: flex;
-        flex-wrap: wrap;  
-        
-        a {
-            flex: 1;
-            text-align: center;
-            cursor: pointer;
-            transition: all .3s ease-out;
-
-            &:hover { 
-                transform: scale(1.1); 
-            }
-            
-            img {
-                margin: 8px;
-                height: 320px;
-                width: 212.5px;
-            }
-        }
+        flex-wrap: wrap;
     }
-
+    
     .cards-empty {
         margin: 200px auto;
         text-align: center;
@@ -42,5 +25,23 @@
         font-weight: 700;
         color: #aaa;
         text-transform: uppercase;
+    }
+}
+
+.card {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease-out;
+
+    &:hover { 
+        transform: scale(1.1); 
+    }
+    
+    img {
+        margin: 8px;
+        height: 320px;
+        width: 212.5px;
     }
 }

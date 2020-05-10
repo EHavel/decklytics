@@ -1,0 +1,50 @@
+.card-details-container {
+    width: 800px;
+    margin: 40px auto;
+    
+    .card-details {
+        max-width: 650px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+
+        .details {
+            flex: 1;
+            color: $color-3;
+            margin-left: 32px;
+
+            h2 {
+                margin: 24px 0;
+                font: 400 2.4em/2.2 'Signika', sans-serif;
+                color: $color-2;
+            }
+            
+            p {
+                font: 400 1.4em/2.2 'Signika', sans-serif;
+                color: $color-2;
+            }
+
+            .main-tags {
+                display: flex;
+                margin-bottom: 24px;
+
+                .tag-icon {
+                    margin-right: 16px;
+                }
+            }
+
+            .description {
+                margin-bottom: 24px;
+            }
+
+            .tag-icon + p {
+                margin: 4px 0 16px;
+            }
+        }
+    }
+
+    .card-associated {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,16 @@
+.tag-icon {
+    display: flex;
+    align-items: center;
+    
+    h4 {
+        font: 500 1.4em 'Barlow Condensed', sans-serif;
+        color: $color-3;
+        text-transform: uppercase;
+    }
+
+    img {
+        margin-right: 4px;
+        height: 24px;
+        width: 24px;
+    }
+}

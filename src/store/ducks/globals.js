@@ -1,21 +1,20 @@
 export const types = {
-    SET_CARDS: "SET_CARDS",
+    SET_GLOBALS: "SET_GLOBALS",
 }
 
 export const actions = {
-    setCards: (data) => ({
-        type: types.SET_CARDS,
+    setGlobals: (data) => ({
+        type: types.SET_GLOBALS,
         data: data
     }),
 }
 
-const INITIAL_STATE = []
-
+const INITIAL_STATE = {}
 export const reducer = (state = INITIAL_STATE, action) => {
     let newState = JSON.parse(JSON.stringify(state))
 
     switch (action.type) {
-        case types.SET_CARDS:
+        case types.SET_GLOBALS:
             newState = action.data
             break
         default:

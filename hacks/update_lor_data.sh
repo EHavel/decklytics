@@ -70,25 +70,32 @@ do
     search=".png\""
     replace=".webp\""
     sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/globals-${regionsCode[$i]}.json
+    sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set1-${regionsCode[$i]}.json
+    sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set2-${regionsCode[$i]}.json
 
     search=http://.*regions/
     replace=/data/lor/regions/
     sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/globals-${regionsCode[$i]}.json
 
-    search=".png\""
-    replace=".webp\""
-    sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set1-${regionsCode[$i]}.json
-
     search=http://.*cards/
     replace=/data/lor/${regionsCode[$i]}/cards/
     sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set1-${regionsCode[$i]}.json
-
-    search=".png\""
-    replace=".webp\""
     sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set2-${regionsCode[$i]}.json
 
-    search=http://.*cards/
-    replace=/data/lor/${regionsCode[$i]}/cards/
+    echo "creating ${regionsCode[$i]} typeRef..." 
+    search="\"type\": \"Feitiço\""
+    replace="\"typeRef\": \"Spells\",\"type\": \"Feitiço\""
+    sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set1-${regionsCode[$i]}.json
+    sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set2-${regionsCode[$i]}.json
+
+    search="\"type\": \"Unidade\""
+    replace="\"typeRef\": \"Units\",\"type\": \"Unidade\""
+    sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set1-${regionsCode[$i]}.json
+    sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set2-${regionsCode[$i]}.json
+    
+    search="\"type\": \"Habilidade\""
+    replace="\"typeRef\": \"Skill\",\"type\": \"Habilidade\""
+    sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set1-${regionsCode[$i]}.json
     sed -i "" "s|${search}|${replace}|g" ${extractPath}${regionsCode[$i]}/data/set2-${regionsCode[$i]}.json
 
     echo "moving ${regionsCode[$i]} datas..."
