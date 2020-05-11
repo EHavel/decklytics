@@ -614,7 +614,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Habilidade",
+    "typeRef": "Skill","type": "Habilidade",
     "collectible": false
   },
   {
@@ -2006,7 +2006,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Habilidade",
+    "typeRef": "Skill","type": "Habilidade",
     "collectible": false
   },
   {
@@ -2206,7 +2206,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Habilidade",
+    "typeRef": "Skill","type": "Habilidade",
     "collectible": false
   },
   {
@@ -2278,7 +2278,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Habilidade",
+    "typeRef": "Skill","type": "Habilidade",
     "collectible": false
   },
   {
@@ -2738,7 +2738,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Habilidade",
+    "typeRef": "Skill","type": "Habilidade",
     "collectible": false
   },
   {
@@ -4284,7 +4284,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Habilidade",
+    "typeRef": "Skill","type": "Habilidade",
     "collectible": false
   },
   {
@@ -4751,7 +4751,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Habilidade",
+    "typeRef": "Skill","type": "Habilidade",
     "collectible": false
   },
   {
@@ -5745,7 +5745,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Habilidade",
+    "typeRef": "Skill","type": "Habilidade",
     "collectible": false
   },
   {
@@ -5944,7 +5944,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Habilidade",
+    "typeRef": "Skill","type": "Habilidade",
     "collectible": false
   },
   {
@@ -6170,7 +6170,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Habilidade",
+    "typeRef": "Skill","type": "Habilidade",
     "collectible": false
   },
   {
@@ -6208,7 +6208,7 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "",
-    "type": "Habilidade",
+    "typeRef": "Skill","type": "Habilidade",
     "collectible": false
   },
   {

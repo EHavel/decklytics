@@ -14,10 +14,8 @@ echo
 echo "##############################################"
 echo 
 
-regionsCode=(pt_br)
-# regionsCode=(pt_br en_us ja_jp de_de es_es fr_fr it_it ko_kr)
-regionsName=(Português)
-# regionsName=(Português English 日本語 Deutsch Español Français Italiano 한국어)
+regionsCode=(pt_br en_us ja_jp de_de es_es fr_fr it_it ko_kr)
+regionsName=(Português English 日本語 Deutsch Español Français Italiano 한국어)
 
 echo "preparing folders..."
 dataPath=public/data/new-lor/
@@ -125,7 +123,7 @@ languagesJSON+="]"
 echo ${languagesJSON} > ${dataPath}language.json
 
 echo "🔪 cleaning tracks..."
-# rm -rf ${basePath}
+rm -rf ${basePath}
 
 echo "Finish! 🙂"
 exit;
