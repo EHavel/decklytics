@@ -1,0 +1,41 @@
+{
+    "bundles": [
+        "https://dd.b.pvp.net/latest/core-${REGION}.zip",
+        "https://dd.b.pvp.net/latest/set1-${REGION}.zip",
+        "https://dd.b.pvp.net/latest/set2-${REGION}.zip"
+    ],
+    "regions": [
+        {
+            "code": "pt_br",
+            "name": "Português"
+        },
+        {
+            "code": "en_us",
+            "name": "English"
+        },
+        {
+            "code": "ja_jp",
+            "name": "日本語"
+        },
+        {
+            "code": "de_de",
+            "name": "Deutsch"
+        },
+        {
+            "code": "es_es",
+            "name": "Español"
+        },
+        {
+            "code": "fr_fr",
+            "name": "Français"
+        },
+        {
+            "code": "it_it",
+            "name": "Italiano"
+        },
+        {
+            "code": "ko_kr",
+            "name": "한국어"
+        }
+    ]
+}

@@ -6,6 +6,10 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 
+# Python cache
+__pycache__/
+__temp/
+
 # Firebase cache
 .firebase/
 

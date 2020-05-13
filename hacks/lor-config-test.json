@@ -1,0 +1,12 @@
+{
+    "bundles": [
+        "https://dd.b.pvp.net/latest/core-$REGION.zip",
+        "https://dd.b.pvp.net/latest/set1-$REGION.zip"
+    ],
+    "regions": [
+        {
+            "code": "pt_br",
+            "name": "Português"
+        }
+    ]
+}
