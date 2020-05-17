@@ -8,41 +8,12 @@ Site de criação e analise de deck e suas características para varios jogos.
 ### Design ###
 [figma.com/file/5AtjHZtcVGIjLSMTjp01w6/Decklytics](https://www.figma.com/file/5AtjHZtcVGIjLSMTjp01w6/Decklytics)
 
-### Criação da v1 - Integração com LOR ###
-
-🤘 ~~design do logo~~
-
-🤘 ~~design da página de cartas do LOR~~
-
-🤘 ~~design da página criação de decks do LOR~~
-
-🤘 ~~design da página home do LOR~~
-
-🤘 ~~topo do site~~
-
-🤘 ~~controle de multi idiomas~~
-
-🤘 ~~carregamento de cartas~~
-
-💣 inclusão de banner Ads Google
-
-🤘 ~~filtro regiões~~
-
-💣 filtro tipos
-
-💣 filtro manas
-
-💣 botão scrollar para o topo
-
-💣 estatística do deck
-
-💣 lista de cartas do deck
-
-💣 gerar ID deck
-
-💣 listagem de decks gerados
-
-💣 listagem de decks de youtubers
+### Projeto v1 - Integração com LOR ###
+- [ ] Suporte para vários idiomas
+- [x] Listagem de cartas com filtros (por região, tipo e raridade)
+- [ ] Detalhes da carta
+- [ ] Detalhes do deck com exportar e gerador de imagem para compartilhar
+- [ ] Importar deck
 
 ## Línguas suportadas ##
 

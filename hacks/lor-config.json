@@ -1,41 +1,146 @@
 {
+    "bundleUrl": "https://dd.b.pvp.net/latest/",
     "bundles": [
-        "https://dd.b.pvp.net/latest/core-${REGION}.zip",
-        "https://dd.b.pvp.net/latest/set1-${REGION}.zip",
-        "https://dd.b.pvp.net/latest/set2-${REGION}.zip"
+        "core-$LOCALE.zip",
+        "set1-$LOCALE.zip",
+        "set2-$LOCALE.zip"
     ],
-    "regions": [
+    "locales": [
         {
             "code": "pt_br",
-            "name": "Português"
+            "name": "Português",
+            "flag": "🇧🇷",
+            "extras": {
+                "types": [
+                    {
+                        "name": "Unidade",
+                        "nameRef": "Unit"
+                    },
+                    {
+                        "name": "Feitiço",
+                        "nameRef": "Spell"
+                    }
+                ]
+            }
         },
         {
             "code": "en_us",
-            "name": "English"
+            "name": "English",
+            "flag": "🇺🇲",
+            "extras": {
+                "types": [
+                    {
+                        "name": "Unit",
+                        "nameRef": "Unit"
+                    },
+                    {
+                        "name": "Spell",
+                        "nameRef": "Spell"
+                    }
+                ]
+            }
         },
         {
             "code": "ja_jp",
-            "name": "日本語"
+            "name": "日本語",
+            "flag": "🇯🇵",
+            "extras": {
+                "types": [
+                    {
+                        "name": "ユニット",
+                        "nameRef": "Unit"
+                    },
+                    {
+                        "name": "スペル",
+                        "nameRef": "Spell"
+                    }
+                ]
+            }
         },
         {
             "code": "de_de",
-            "name": "Deutsch"
+            "name": "Deutsch",
+            "flag": "🇩🇪",
+            "extras": {
+                "types": [
+                    {
+                        "name": "Einheit",
+                        "nameRef": "Unit"
+                    },
+                    {
+                        "name": "Zauber",
+                        "nameRef": "Spell"
+                    }
+                ]
+            }
         },
         {
             "code": "es_es",
-            "name": "Español"
+            "name": "Español",
+            "flag": "🇪🇸",
+            "extras": {
+                "types": [
+                    {
+                        "name": "",
+                        "nameRef": "Unit"
+                    },
+                    {
+                        "name": "",
+                        "nameRef": "Spell"
+                    }
+                ]
+            }
         },
         {
             "code": "fr_fr",
-            "name": "Français"
+            "name": "Français",
+            "flag": "🇫🇷",
+            "extras": {
+                "types": [
+                    {
+                        "name": "",
+                        "nameRef": "Unit"
+                    },
+                    {
+                        "name": "",
+                        "nameRef": "Spell"
+                    }
+                ]
+            }
         },
         {
             "code": "it_it",
-            "name": "Italiano"
+            "name": "Italiano",
+            "flag": "🇮🇹",
+            "extras": {
+                "types": [
+                    {
+                        "name": "",
+                        "nameRef": "Unit"
+                    },
+                    {
+                        "name": "",
+                        "nameRef": "Spell"
+                    }
+                ]
+            }
         },
         {
             "code": "ko_kr",
-            "name": "한국어"
+            "name": "한국어",
+            "flag": "🇰🇷",
+            "extras": {
+                "types": [
+                    {
+                        "name": "",
+                        "nameRef": "Unit"
+                    },
+                    {
+                        "name": "",
+                        "nameRef": "Spell"
+                    }
+                ]
+            }
         }
     ]
 }

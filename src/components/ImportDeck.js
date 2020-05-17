@@ -8,10 +8,6 @@ const ImportDeck = ({ visible, hideCallback }) => {
         setCode(event.target.value)
     }
 
-    const openLink = () => {
-
-    }
-
     if (!visible) return null
     return (
         <>

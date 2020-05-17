@@ -1,0 +1,142 @@
+{
+    "cardGallery": {
+        "pt_br": "",
+        "en_us": "Card Gallery",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "deckLibrary": {
+        "pt_br": "",
+        "en_us": "Deck Library",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "deckBuilder": {
+        "pt_br": "",
+        "en_us": "Deck Builder",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "playNow": {
+        "pt_br": "",
+        "en_us": "Play Now",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "filterByRegion": {
+        "pt_br": "",
+        "en_us": "Filter by region",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "filterByRarity": {
+        "pt_br": "",
+        "en_us": "Filter by rarity",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "filterByType": {
+        "pt_br": "",
+        "en_us": "Filter by type",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "allRegions": {
+        "pt_br": "",
+        "en_us": "All regions",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "levelUp": {
+        "pt_br": "",
+        "en_us": "Level up",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "associatedCards": {
+        "pt_br": "",
+        "en_us": "Associated cards",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "importTitle": {
+        "pt_br": "Análise seu deck",
+        "en_us": "Associated cards",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "importDescription": {
+        "pt_br": "Importe qualquer deck por código de identificação dele para você ver uma análise detalhada de todas as suas cartas.",
+        "en_us": "Associated cards",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "importPlaceholder": {
+        "pt_br": "código do deck",
+        "en_us": "Associated cards",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    },
+    "importButton": {
+        "pt_br": "Importar",
+        "en_us": "Import",
+        "ja_jp": "",
+        "de_de": "",
+        "es_es": "",
+        "fr_fr": "",
+        "it_it": "",
+        "ko_kr": ""
+    }
+}

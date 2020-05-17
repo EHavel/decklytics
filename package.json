@@ -26,7 +26,8 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "deploy": "react-scripts build && firebase deploy",
-        "update-lor-data": "./hacks/update_lor_data.sh"
+        "load-data": "python3.8 ./hacks/lor-load.py",
+        "create-data": "python3.8 ./hacks/lor-data.py"
     },
     "eslintConfig": {
         "extends": "react-app"

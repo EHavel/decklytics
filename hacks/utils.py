@@ -1,53 +1,100 @@
 import requests
-from tqdm import tqdm
 import zipfile
 import json
 import pathlib
 from pexpect import *
+from time import sleep
+import keyboard
+import sys  
+from progress.bar import IncrementalBar
+from progress.spinner import PixelSpinner
 
 class Utils:
     def resetFolder(folder):
+        print('reseting folder', folder)
         run("rm -rf %s" % folder)
         run("mkdir %s" % folder)
 
+    def deleteFolder(folder):
+        print('deleting folder', folder)
+        run("rm -rf %s" % folder)
+
     def openJson(url):
+        print('opening json', url)
         with open(url) as json_file:
             return json.load(json_file)
 
-    def loadZip(url, file):
-        print ('loading: %s' % url)
+    def loadZip(url, outputFile):
+        print ('load file', url)
 
         resp = requests.get(url, stream=True)
-        
         total_size = int(resp.headers.get('content-length', 0))
         block_size = 1024 #1 Kibibyte
-        
-        zfile = tqdm(total=total_size, unit='iB', unit_scale=True)
-        with open(file, 'wb') as f:
+
+        bar = IncrementalBar('loading', max=total_size, suffix='%(percent)d%%')
+        with open(outputFile, 'wb') as f:
             for data in resp.iter_content(block_size):
-                zfile.update(len(data))
+                bar.next(len(data))
                 f.write(data)
-        zfile.close()
-
-        if total_size != 0 and zfile.n != total_size:
-            print("ERROR, something went wrong")
+        bar.finish()
     
-    def extractZip(pathZip):
-        print ('extracting: %s' % pathZip)
-
-        path = pathlib.Path(pathZip).parent.absolute()
+    def extractZip(pathZip, extractPath):
+        print ('extract file', pathZip)
 
         zf = zipfile.ZipFile(pathZip)
+
+        bar = IncrementalBar('extracting', max=len(zf.infolist()))
         for file in zf.infolist():
-            print('extract', file.filename)
-            zf.extract(file, path)
+            bar.next()
+            zf.extract(file, extractPath)
+        bar.finish()
 
-    def optimizeImages(outputPath, imagePath):
-        run('magick mogrify -resize 34% -path %s -format webp %s*.png' % (outputPath, imagePath),
-            events={TIMEOUT:printLoading}, timeout=5)
+    def optimizeImages(inputFolder, outputFolder):
+        print('optimize images', inputFolder)
+        print('create:', outputFolder)
 
-    def printLoading():
-        print('OPA')
+        f = 'magick mogrify -resize 34%% -path %s -format webp %s*.png' % (outputFolder, inputFolder)        
+        
+        spinner = PixelSpinner('optimizing ')
+        def spinnerNext(d):
+            spinner.next(),
+        run(f, events={TIMEOUT:spinnerNext}, timeout=0.1)
+        spinner.finish()
 
-    def getBundleUrl(url, regionCode):
-        return url.replace("$REGION", regionCode)
+    def mapperCard(i, localeCode, extras):
+        data = {}
+        data['name'] = i['name']
+        data['cardCode'] = i['cardCode']
+        data['cardImg'] = '/data/%s/cards/%s.webp' % (localeCode, i['cardCode'])
+        data['flavorText'] = i['flavorText']
+        data['levelupDescription'] = i['levelupDescription']
+        data['regionRef'] = i['regionRef']
+        data['keywordRefs'] = i['keywordRefs']
+        data['spellSpeedRef'] = i['spellSpeedRef']
+        data['rarityRef'] = i['rarityRef']
+        
+        for type in extras['types']:
+            if type['name'] == i['type']:
+                data['typeRef'] = type['nameRef']
+                break
+
+        data['supertype'] = i['supertype']
+        data['associatedCardRefs'] = i['associatedCardRefs']
+        data['collectible'] = i['collectible']
+        # data['associatedCards'] = i['associatedCards']
+        # data['region'] = i['region']
+        # data['attack'] = i['attack']
+        # data['cost'] = i['cost']
+        # data['health'] = i['health']
+        # data['description'] = i['description']
+        # data['descriptionRaw'] = i['descriptionRaw']
+        # data['levelupDescriptionRaw'] = i['levelupDescriptionRaw']
+        # data['artistName'] = i['artistName']
+        # data['keywords'] = i['keywords']
+        # data['spellSpeed'] = i['spellSpeed']
+        # data['rarity'] = i['rarity']
+        # data['subtype'] = i['subtype']
+        # data['subtypes'] = i['subtypes']
+
+        return data
+
