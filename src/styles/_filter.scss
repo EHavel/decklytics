@@ -31,7 +31,9 @@
 
             .filter-item {
                 width: 50px;
-                padding: 8px;
+                margin: 8px;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 cursor: pointer;
                 display: block;
                 text-align: center;

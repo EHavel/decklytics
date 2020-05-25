@@ -8,7 +8,7 @@ const CardLink = ({ card }) => (
             width={212.5}
             loading="lazy"
             alt={card.name}
-            src={card.assets[0].gameAbsolutePath} />
+            src={card.cardImg} />
     </Link>
 )
 export default CardLink

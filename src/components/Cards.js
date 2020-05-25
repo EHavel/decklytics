@@ -19,7 +19,7 @@ function Cards() {
             let listCommon = []
             let list = cards.filter(item => {
                 if (!item.collectible) return false
-                if (!checkRegion(item.regionRef)) return false
+                // if (!checkRegion(item.regionRef)) return false
                 return true
             })
 
@@ -48,7 +48,7 @@ function Cards() {
             if (finalList.length > 0) {
                 return (
                     <div className="cards-container">{
-                        finalList.map(item => (<CardLink card={item} />))
+                        finalList.map(item => (<CardLink key={item.cardCode} card={item} />))
                     }</div>
                 )
             } else {

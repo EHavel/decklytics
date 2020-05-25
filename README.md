@@ -5,6 +5,20 @@ Site de criação e analise de deck e suas características para varios jogos.
 
 ## Decklytics.pro ##
 
+## Configuração ##
+
+https://imagemagick.org/script/download.php
+
+Instalar dependencias do python:
+``` bash
+$ pip3 install utils
+$ pip3 install requests
+$ pip3 install pexpect
+$ pip3 install keyboard
+$ pip3 install progress
+$ brew install imagemagick
+```
+
 ### Design ###
 [figma.com/file/5AtjHZtcVGIjLSMTjp01w6/Decklytics](https://www.figma.com/file/5AtjHZtcVGIjLSMTjp01w6/Decklytics)
 

@@ -5,6 +5,7 @@ import { actions as actionsFilters } from 'store/ducks/filters'
 import { FilterItem } from 'components'
 
 const Filter = () => {
+    const dic = useSelector(state => state.dic)
     const filters = useSelector(state => state.filters)
     const dispacth = useDispatch()
 
@@ -16,44 +17,38 @@ const Filter = () => {
         dispacth(actionsFilters.allRegionFilter())
     }
 
-    const renderFilterRegion = () => filters.regions.map(item => {
-        let selectedClass = item.active ? 'filter-active' : ''
-        return (
-            <FilterItem type={item.nameRef}>{item.name}</FilterItem>
-            // <div
-            //     key={item.nameRef}
-            //     onClick={() => toggleRegionFilter(item.nameRef)}
-            //     className={`filter-item ${selectedClass}`}>
-            //     <img src={iconFilter} alt={item.name} />
-            //     <span>{item.name}</span>
-            // </div>
-        )
-    })
+    const renderFilterRegion = () => filters.regions.map(item => (
+        <FilterItem type={item.nameRef}>{item.name}</FilterItem>
+    ))
+
+    const renderFilterRarity = () => filters.rarities.map(item => (
+        <FilterItem type={item.nameRef}>{item.name}</FilterItem>
+    ))
+
+    const renderFilterType = () => filters.types.map(item => (
+        <FilterItem type={item.nameRef}>{item.name}</FilterItem>
+    ))
 
     return (
         <div className="filter">
             <div className="filter-container">
-                <h3>Filter by region</h3>
+                <h3>{dic.filterByRegion}</h3>
                 <div className="filter-content">
                     {renderFilterRegion()}
-                    <FilterItem type="all">All regions</FilterItem>
+                    <FilterItem type="all">{dic.allRegions}</FilterItem>
                 </div>
             </div>
             <div className="filter-container">
-                <h3>Filter by rarity</h3>
+                <h3>{dic.filterByRarity}</h3>
                 <div className="filter-content">
-                    <FilterItem type="champion">Champion</FilterItem>
-                    <FilterItem type="epic">Epic</FilterItem>
-                    <FilterItem type="rare">Rare</FilterItem>
-                    <FilterItem type="common">Common</FilterItem>
+                    {renderFilterRarity()}
                 </div>
             </div>
             <div className="filter-container">
-                <h3>Filter by type</h3>
+                <h3>{dic.filterByType}</h3>
                 <div className="filter-content">
                     <FilterItem></FilterItem>
-                    <FilterItem type="units">Units</FilterItem>
-                    <FilterItem type="spells">Spells</FilterItem>
+                    {renderFilterType()}
                     <FilterItem></FilterItem>
                 </div>
             </div>

@@ -1,142 +1,82 @@
 {
     "cardGallery": {
-        "pt_br": "",
+        "pt_br": "Cartas",
         "en_us": "Card Gallery",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
-    },
-    "deckLibrary": {
-        "pt_br": "",
-        "en_us": "Deck Library",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
-    },
-    "deckBuilder": {
-        "pt_br": "",
-        "en_us": "Deck Builder",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
+        "ja_jp": "カードギャラリー",
+        "de_de": "Karte Galerie",
+        "es_es": "Galería de tarjeta",
+        "fr_fr": "Galerie carte",
+        "it_it": "Galleria Carta",
+        "ko_kr": "카드 갤러리"
     },
     "playNow": {
-        "pt_br": "",
+        "pt_br": "Jogar agora",
         "en_us": "Play Now",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
+        "ja_jp": "今すぐプレイ",
+        "de_de": "Jetzt spielen",
+        "es_es": "Reproducir ahora",
+        "fr_fr": "Joue maintenant",
+        "it_it": "Riproduci ora",
+        "ko_kr": "지금 플레이"
     },
     "filterByRegion": {
-        "pt_br": "",
+        "pt_br": "Filtro por região",
         "en_us": "Filter by region",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
+        "ja_jp": "地域別のフィルタ",
+        "de_de": "Filter nach Region",
+        "es_es": "Filtro por Región",
+        "fr_fr": "filtrer par région",
+        "it_it": "filtra per regione",
+        "ko_kr": "지역별 필터"
     },
     "filterByRarity": {
-        "pt_br": "",
+        "pt_br": "Filtro por raridade",
         "en_us": "Filter by rarity",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
+        "ja_jp": "希少性によるフィルタ",
+        "de_de": "Filter nach Seltenheit",
+        "es_es": "Filtrar por rareza",
+        "fr_fr": "Filtrer par rareté",
+        "it_it": "Filtra per rarità",
+        "ko_kr": "희귀별로 필터"
     },
     "filterByType": {
-        "pt_br": "",
+        "pt_br": "Filtro por tipo",
         "en_us": "Filter by type",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
+        "ja_jp": "形式による絞り込み",
+        "de_de": "Filter nach Typ",
+        "es_es": "Filtrar por tipo",
+        "fr_fr": "Filtrer par type",
+        "it_it": "Filtro per tipo",
+        "ko_kr": "유형별로 필터링"
     },
     "allRegions": {
-        "pt_br": "",
+        "pt_br": "Todas regiões",
         "en_us": "All regions",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
+        "ja_jp": "すべての地域",
+        "de_de": "Alle Regionen",
+        "es_es": "Todas las regiones",
+        "fr_fr": "Toutes les régions",
+        "it_it": "Tutte le regioni",
+        "ko_kr": "모든 지역"
     },
     "levelUp": {
-        "pt_br": "",
+        "pt_br": "Subir de nível",
         "en_us": "Level up",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
+        "ja_jp": "レベルアップ",
+        "de_de": "Aufleveln",
+        "es_es": "Elevar a mismo nivel",
+        "fr_fr": "Niveau supérieur",
+        "it_it": "Level up",
+        "ko_kr": "레벨 업"
     },
     "associatedCards": {
-        "pt_br": "",
+        "pt_br": "Cartas associadas",
         "en_us": "Associated cards",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
-    },
-    "importTitle": {
-        "pt_br": "Análise seu deck",
-        "en_us": "Associated cards",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
-    },
-    "importDescription": {
-        "pt_br": "Importe qualquer deck por código de identificação dele para você ver uma análise detalhada de todas as suas cartas.",
-        "en_us": "Associated cards",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
-    },
-    "importPlaceholder": {
-        "pt_br": "código do deck",
-        "en_us": "Associated cards",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
-    },
-    "importButton": {
-        "pt_br": "Importar",
-        "en_us": "Import",
-        "ja_jp": "",
-        "de_de": "",
-        "es_es": "",
-        "fr_fr": "",
-        "it_it": "",
-        "ko_kr": ""
+        "ja_jp": "関連するカード",
+        "de_de": "Assoziierte Karten",
+        "es_es": "tarjetas asociadas",
+        "fr_fr": "cartes associées",
+        "it_it": "carte associate",
+        "ko_kr": "관련 카드"
     }
 }

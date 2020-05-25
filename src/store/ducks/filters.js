@@ -1,13 +1,23 @@
 export const types = {
-    SET_FILTERS: "SET_FILTERS",
+    SET_REGIONS: "SET_REGIONS",
+    SET_RARITIES: "SET_RARITIES",
+    SET_TYPES: "SET_TYPES",
     TOOGLE_REGION_FILTER: "TOOGLE_REGION_FILTER",
     ALL_REGION_FILTER: "ALL_REGION_FILTER",
 }
 
 export const actions = {
-    setFilters: (globals) => ({
-        type: types.SET_FILTERS,
-        globals: globals,
+    setRegions: (data) => ({
+        type: types.SET_REGIONS,
+        data: data,
+    }),
+    setRarities: (data) => ({
+        type: types.SET_RARITIES,
+        data: data,
+    }),
+    setTypes: (data) => ({
+        type: types.SET_TYPES,
+        data: data,
     }),
     toogleRegionFilter: (name) => ({
         type: types.TOOGLE_REGION_FILTER,
@@ -19,28 +29,23 @@ export const actions = {
 }
 
 const INITIAL_STATE = {
-    regions: []
-}
-
-const handleFilters = (globals) => {
-    let filters = {}
-    filters.regions = globals.regions.map(item => {
-        return {
-            name: item.name,
-            nameRef: item.nameRef,
-            icon: item.iconAbsolutePath,
-            active: true,
-        }
-    })
-    return filters
+    regions: [],
+    rarities: [],
+    types: []
 }
 
 export const reducer = (state = INITIAL_STATE, action) => {
     let newState = JSON.parse(JSON.stringify(state))
 
     switch (action.type) {
-        case types.SET_FILTERS:
-            newState = handleFilters(action.globals)
+        case types.SET_REGIONS:
+            newState.regions = handleRegions(action.data)
+            break
+        case types.SET_RARITIES:
+            newState.rarities = handleRarities(action.data)
+            break
+        case types.SET_TYPES:
+            newState.types = handleTypes(action.data)
             break
         case types.TOOGLE_REGION_FILTER:
             newState.regions = newState.regions.map(item => {
@@ -61,3 +66,29 @@ export const reducer = (state = INITIAL_STATE, action) => {
 
     return newState
 }
+
+const handleRegions = (data) => data.map(item => {
+    return {
+        name: item.name,
+        nameRef: item.nameRef,
+        active: true,
+    }
+})
+
+const handleRarities = (data) => data.map(item => {
+    if (item.nameRef == 'None') return false
+
+    return {
+        name: item.name,
+        nameRef: item.nameRef,
+        active: true,
+    }
+})
+
+const handleTypes = (data) => data.map(item => {
+    return {
+        name: item.name,
+        nameRef: item.nameRef,
+        active: true,
+    }
+})

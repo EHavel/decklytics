@@ -82,13 +82,9 @@ const Icon = ({ name }) => {
                 return iconRare
             case "common":
                 return iconCommon
-            case "units":
+            case "unit":
                 return iconUnits
-            case "spells":
-                return iconSpells
-            case "units":
-                return iconUnits
-            case "spells":
+            case "spell":
                 return iconSpells
             case "slow":
                 return iconSlow

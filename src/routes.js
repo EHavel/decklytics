@@ -25,10 +25,10 @@ const Routes = () => {
     return (
         <Router history={History}>
             <Switch>
-                <Route exact path='/cards' component={CardsPage} />
+                <Route exact path='/' component={CardsPage} />
                 <Route exact path='/card/:id' component={CardDetailPage} />
-                <Route exact path='/deck/:code' component={DeckDetailsPage} />
-                <Redirect from='*' to='/cards' />
+                {/* <Route exact path='/deck/:code' component={DeckDetailsPage} /> */}
+                <Redirect from='*' to='/' />
             </Switch>
         </Router>
     )

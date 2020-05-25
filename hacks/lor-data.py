@@ -1,7 +1,6 @@
 from utils import Utils
 import json
 
-print ("##############################################")
 print ("   _____     ______     ______   ______       ")
 print ("  /\  __-.  /\  __ \   /\__  _\ /\  __ \      ")
 print ("  \ \ \/\ \ \ \  __ \  \/_/\ \/ \ \  __ \     ")
@@ -13,10 +12,9 @@ print ("  \ \ \____  \ \ \/\ \  \ \  __<              ")
 print ("   \ \_____\  \ \_____\  \ \_\ \_\            ")
 print ("    \/_____/   \/_____/   \/_/ /_/            ")
 print ("                                              ")
-print ("##############################################")
-print ("                                              ")
 
 configs = Utils.openJson('./hacks/lor-config.json')
+strings = Utils.openJson('./hacks/strings.json')
 
 dataFolder = './hacks/data/'
 baseFolder = './hacks/__temp/'
@@ -24,6 +22,7 @@ baseExtractFolder = baseFolder + 'extract/'
 
 Utils.resetFolder(dataFolder)
 
+# Create folder locale
 for locale in configs['locales']:
     print ('start processing data 🔥🔥🔥')
     print ('%s %s' % (locale['code'], locale['flag']))
@@ -44,7 +43,18 @@ for locale in configs['locales']:
     set1Json = Utils.openJson('%s%s/data/set1-%s.json' % (baseExtractFolder, locale['code'], locale['code']))
     set2Json = Utils.openJson('%s%s/data/set2-%s.json' % (baseExtractFolder, locale['code'], locale['code']))
 
+    dic = {}
+    dic['cardGallery'] = strings['cardGallery'][locale['code']]
+    dic['playNow'] = strings['playNow'][locale['code']]
+    dic['filterByRegion'] = strings['filterByRegion'][locale['code']]
+    dic['filterByRarity'] = strings['filterByRarity'][locale['code']]
+    dic['filterByType'] = strings['filterByType'][locale['code']]
+    dic['allRegions'] = strings['allRegions'][locale['code']]
+    dic['levelUp'] = strings['levelUp'][locale['code']]
+    dic['associatedCards'] = strings['associatedCards'][locale['code']]
+
     data = {}
+    data['dictionary'] = dic
     data['keywords'] = coreJson['keywords']
     data['regions'] = coreJson['regions']
     data['spellSpeeds'] = coreJson['spellSpeeds']
@@ -61,4 +71,4 @@ for locale in configs['locales']:
     with open('%sdata.json' % localeFolder, 'w') as outfile:
         json.dump(data, outfile, ensure_ascii=False)
 
-print ('🍻 Data created!')
+print ('🍻  Data created!')
