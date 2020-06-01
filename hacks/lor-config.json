@@ -81,11 +81,11 @@
             "extras": {
                 "types": [
                     {
-                        "name": "",
+                        "name": "Unidad",
                         "nameRef": "Unit"
                     },
                     {
-                        "name": "",
+                        "name": "Encanto",
                         "nameRef": "Spell"
                     }
                 ]
@@ -98,11 +98,11 @@
             "extras": {
                 "types": [
                     {
-                        "name": "",
+                        "name": "Unité",
                         "nameRef": "Unit"
                     },
                     {
-                        "name": "",
+                        "name": "Épeler",
                         "nameRef": "Spell"
                     }
                 ]
@@ -115,11 +115,11 @@
             "extras": {
                 "types": [
                     {
-                        "name": "",
+                        "name": "Unità",
                         "nameRef": "Unit"
                     },
                     {
-                        "name": "",
+                        "name": "Incanto",
                         "nameRef": "Spell"
                     }
                 ]
@@ -132,11 +132,11 @@
             "extras": {
                 "types": [
                     {
-                        "name": "",
+                        "name": "단위",
                         "nameRef": "Unit"
                     },
                     {
-                        "name": "",
+                        "name": "주문",
                         "nameRef": "Spell"
                     }
                 ]

@@ -12,7 +12,7 @@ import {
 //Pages
 import CardsPage from 'pages/CardsPage'
 import CardDetailPage from 'pages/CardDetailPage'
-import DeckDetailsPage from 'pages/DeckDetailsPage'
+// import DeckDetailsPage from 'pages/DeckDetailsPage'
 
 const Routes = () => {
     const dispacth = useDispatch()

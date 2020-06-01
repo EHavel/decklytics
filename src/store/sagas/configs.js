@@ -25,9 +25,11 @@ function* loadConfigs() {
 
     try {
         const configs = yield call(getConfigsApi, state.translator.selected.code)
+        console.log("configs:", configs.keywords)
 
         yield put(actionsCards.setCards(configs.cards))
 
+        yield put(actionsDictionary.setKeywords(configs.keywords))
         yield put(actionsDictionary.setDictionary(configs.dictionary))
 
         yield put(actionsFilters.setRegions(configs.regions))

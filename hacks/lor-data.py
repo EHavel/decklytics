@@ -52,6 +52,14 @@ for locale in configs['locales']:
     dic['allRegions'] = strings['allRegions'][locale['code']]
     dic['levelUp'] = strings['levelUp'][locale['code']]
     dic['associatedCards'] = strings['associatedCards'][locale['code']]
+    for dicRegion in coreJson['keywords']:
+        dic[dicRegion['nameRef']] = dicRegion['name']
+    for dicRegion in coreJson['regions']:
+        dic[dicRegion['nameRef']] = dicRegion['name']
+    for dicRegion in coreJson['spellSpeeds']:
+        dic[dicRegion['nameRef']] = dicRegion['name']
+    for dicRegion in coreJson['rarities']:
+        dic[dicRegion['nameRef']] = dicRegion['name']
 
     data = {}
     data['dictionary'] = dic

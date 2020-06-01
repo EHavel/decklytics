@@ -76,7 +76,7 @@ const handleRegions = (data) => data.map(item => {
 })
 
 const handleRarities = (data) => data.map(item => {
-    if (item.nameRef == 'None') return false
+    if (item.nameRef === 'None') return false
 
     return {
         name: item.name,

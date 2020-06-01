@@ -6,7 +6,7 @@ const TagIcon = ({ icon, name }) => {
 
     return (
         <div className="tag-icon">
-            <Icon name={icon} />
+            <Icon name={icon} alt={name} />
             <h4>{name}</h4>
         </div>
     )

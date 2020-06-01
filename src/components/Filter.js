@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import iconFilter from '../assets/icon-filter.png'
+// import iconFilter from '../assets/icon-filter.png'
 import { actions as actionsFilters } from 'store/ducks/filters'
 import { FilterItem } from 'components'
 

@@ -12,6 +12,7 @@ const CardDetailPage = () => {
     const [associatedCards, setAssociatedCards] = useState([])
     const [card, setCard] = useState(null)
     const [cardLevelUp, setCardLevelUp] = useState(null)
+    const dic = useSelector(state => state.dic)
     const cards = useSelector(state => state.cards)
     const { id } = useParams()
 
@@ -46,7 +47,7 @@ const CardDetailPage = () => {
         return true
     })
 
-    const renderCards = () => associatedCards.map(item => (<CardLink card={item} />))
+    // const renderCards = () => associatedCards.map(item => (<CardLink card={item} key={item} />))
 
     const start = useCallback(init, [cards, id])
     useEffect(() => { start() }, [start])
@@ -61,16 +62,16 @@ const CardDetailPage = () => {
                         <>
                             <TitleDivider icon="levelup"
                                 subtitle={card.levelupDescription}>
-                                Subir de nivel
+                                {dic.levelUp}
                             </TitleDivider>
                             <CardDetails card={cardLevelUp} />
                         </>
                     )}
                     {associatedCards.length > 0 && (
                         <>
-                            <TitleDivider>Cartas associadas</TitleDivider>
+                            <TitleDivider>{dic.associatedCards}</TitleDivider>
                             <div className="card-associated">
-                                {renderCards()}
+                                {/* {renderCards()} */}
                             </div>
                         </>
                     )}

@@ -53,7 +53,7 @@ import iconFearsome from 'assets/lor/icons/ic_fearsome.png'
 import iconCantBlock from 'assets/lor/icons/ic_cantblock.png'
 import iconDeep from 'assets/lor/icons/ic_deep.png'
 
-const Icon = ({ name }) => {
+const Icon = ({ name, alt }) => {
 
     const getSrc = () => {
         let ref = String(name).toLowerCase()
@@ -167,6 +167,6 @@ const Icon = ({ name }) => {
         }
     }
 
-    return (<img src={getSrc()} />)
+    return (<img src={getSrc()} alt={alt} />)
 }
 export default Icon
