@@ -8,18 +8,21 @@ import {
 const CardDetails = ({ card }) => {
     const dic = useSelector(state => state.dic)
 
-    // const renderKeywords = () => card.keywordRefs.map(item => {
-    //     console.log("dic", dic, item)
-    //     let myKeyword = dic.keywords.find(keywords => keywords.nameRef === item)
-    //     if (myKeyword) {
-    //         return (
-    //             <>
-    //                 <TagIcon icon={myKeyword.nameRef} name={myKeyword.name} />
-    //                 <p>{ReactHtmlParser(myKeyword.description)}</p>
-    //             </>
-    //         )
-    //     } else { return (<></>) }
-    // })
+    const renderKeywords = () => {
+        if (card.keywordRefs && dic.keywords) {
+            return card.keywordRefs.map(item => {
+                let keyword = dic.keywords.find(key => key.nameRef === item)
+                if (keyword) {
+                    return (
+                        <>
+                            <TagIcon icon={keyword.nameRef} name={keyword.name} key={keyword.nameRef} />
+                            <p>{ReactHtmlParser(keyword.description)}</p>
+                        </>
+                    )
+                } else { return (<></>) }
+            })
+        }
+    }
 
     if (card) {
         return (
@@ -33,7 +36,7 @@ const CardDetails = ({ card }) => {
                         <TagIcon icon={card.rarityRef} name={dic[card.rarityRef]} />
                     </div>
                     <p className="description">{ReactHtmlParser(card.flavorText)}</p>
-                    {/* {renderKeywords()} */}
+                    {renderKeywords()}
                 </div>
             </div>
         )

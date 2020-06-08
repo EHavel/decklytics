@@ -15,39 +15,50 @@ const CardDetailPage = () => {
     const dic = useSelector(state => state.dic)
     const cards = useSelector(state => state.cards)
     const { id } = useParams()
+    let levelUpFound = false
 
     const init = () => {
+        console.log("init -----------------------")
+        // console.log("init -----------------------", cards, id)
         setCardLevelUp(null)
-        let currentCard = filterCards(id)[0]
-        if (currentCard) {
-            let currentCardLevelUp = { ...filterCardLevelUp(currentCard.associatedCardRefs, currentCard.supertype)[0] }
+        if (cards.length > 0) {
+            let currentCard = filterMainCards(id)[0]
+            console.log(currentCard)
+            console.log(cardLevelUp)
 
-            if (currentCard.rarityRef === "Champion") setCardLevelUp(currentCardLevelUp)
-
-            let currentAssociatedCards = filterAssociatedCards(currentCard.associatedCardRefs, currentCardLevelUp)
-            setAssociatedCards(currentAssociatedCards)
-
-            setCard({ ...currentCard })
+            if (currentCard) {
+                if (!levelUpFound) filterCardLevelUp(currentCard.associatedCardRefs, currentCard.supertype)
+                filterAssociatedCards(currentCard.associatedCardRefs, cardLevelUp)
+                setCard({ ...currentCard })
+            }
         }
     }
 
-    const filterCards = code => cards.filter(item => item.cardCode === code)
+    const filterMainCards = code => cards.filter(item => item.cardCode === code)
 
-    const filterCardLevelUp = (associatedCardRefs, supertype) => cards.filter(item => {
-        if (item.rarityRef === "Champion") return false
-        if (associatedCardRefs.indexOf(item.cardCode) === -1) return false
-        if (item.supertype !== supertype) return false
-        if (item.typeRef !== "Units") return false
-        return true
-    })
+    const filterCardLevelUp = (associatedCardRefs, supertype) => {
+        for (let i = 0; i < cards.length; i++) {
+            var item = cards[i]
+            if (item.typeRef !== "Unit") continue
+            if (item.supertype !== supertype) continue
+            if (associatedCardRefs.indexOf(item.cardCode) === -1) continue
+            levelUpFound = true
+            setCardLevelUp({ ...item })
+            break
+        }
+    }
 
-    const filterAssociatedCards = (associatedCardRefs, cardLevelUp) => cards.filter(item => {
-        if (associatedCardRefs.indexOf(item.cardCode) === -1) return false
-        if (cardLevelUp && item.cardCode === cardLevelUp.cardCode) return false
-        return true
-    })
+    const filterAssociatedCards = (associatedCardRefs, cardLevelUp) => {
+        let cardsFiltered = cards.filter(item => {
+            if (associatedCardRefs.indexOf(item.cardCode) === -1) return false
+            if (cardLevelUp && item.cardCode === cardLevelUp.cardCode) return false
+            return true
+        })
+        console.log("cardsFiltered", cardsFiltered)
+        setAssociatedCards(cardsFiltered)
+    }
 
-    // const renderCards = () => associatedCards.map(item => (<CardLink card={item} key={item} />))
+    const renderCards = () => associatedCards.map(item => (<CardLink card={item} key={item.cardCode} />))
 
     const start = useCallback(init, [cards, id])
     useEffect(() => { start() }, [start])
@@ -57,21 +68,23 @@ const CardDetailPage = () => {
             <Header />
             <div className="page-full">
                 <div className="card-details-container">
-                    <CardDetails card={card} />
+                    {card && (
+                        <CardDetails card={card} key={card.cardCode} />
+                    )}
                     {cardLevelUp && (
                         <>
                             <TitleDivider icon="levelup"
                                 subtitle={card.levelupDescription}>
                                 {dic.levelUp}
                             </TitleDivider>
-                            <CardDetails card={cardLevelUp} />
+                            <CardDetails card={cardLevelUp} key={cardLevelUp.cardCode} />
                         </>
                     )}
                     {associatedCards.length > 0 && (
                         <>
                             <TitleDivider>{dic.associatedCards}</TitleDivider>
                             <div className="card-associated">
-                                {/* {renderCards()} */}
+                                {renderCards()}
                             </div>
                         </>
                     )}

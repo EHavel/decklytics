@@ -8,13 +8,58 @@
         "allRegions": "Todas regiões",
         "levelUp": "Subir de nível",
         "associatedCards": "Cartas associadas",
-        "Noxus": "Noxus",
+        "Obliterate": "Obliterar",
+        "Skill": "Habilidade",
+        "DoubleStrike": "Ataque Duplo",
+        "Weakest": "Mais Fraco",
+        "Vulnerable": "Vulnerável",
+        "AttackSkillMark": "Atacar",
+        "Elusive": "Elusivo",
+        "Drain": "Drenar",
+        "Stun": "Atordoar",
+        "Autoplay": "Armadilha",
+        "PiltoverZaun": "Piltover e Zaun",
         "Demacia": "Demacia",
-        "Freljord": "Freljord",
         "ShadowIsles": "Ilhas das Sombras",
+        "SpellOverwhelm": "Sobrepujar",
+        "Attune": "Sintonia",
+        "Barrier": "Barreira",
+        "Immobile": "Imóvel",
+        "Capture": "Capturar",
+        "Frostbite": "Congelar",
+        "Burst": "Súbito",
+        "Fleeting": "Fugaz",
+        "Fast": "Rápido",
+        "Overwhelm": "Sobrepujar",
+        "PlaySkillMark": "Jogar",
+        "QuickStrike": "Ataque Rápido",
+        "Tough": "Robusto",
+        "Recall": "Retornar",
         "Ionia": "Ionia",
+        "Regeneration": "Regeneração",
+        "Silenced": "Silenciado",
+        "Lifesteal": "Roubo de Vida",
+        "Enlightened": "Iluminado",
+        "LevelUp": "Subir de Nível",
+        "Slow": "Lento",
+        "Noxus": "Noxus",
+        "Scout": "Patrulheiro",
+        "Ephemeral": "Efêmero",
+        "Freljord": "Freljord",
+        "LastBreath": "Suspiro Final",
         "Bilgewater": "Águas de Sentina",
-        "PiltoverZaun": "Piltover e Zaun"
+        "Challenger": "Desafiador",
+        "Imbue": "Imbuir",
+        "Fearsome": "Assustador",
+        "CantBlock": "Não Bloqueia",
+        "Deep": "Profundezas",
+        "Common": "COMUM",
+        "Rare": "RARA",
+        "Epic": "ÉPICA",
+        "Champion": "Campeão",
+        "None": "Nenhuma",
+        "Unit": "Unidade",
+        "Spell": "Feitiço"
     },
     "keywords": [
         {
@@ -246,43 +291,43 @@
     "regions": [
         {
             "abbreviation": "NX",
-            "iconAbsolutePath": "http://dd.b.pvp.net/1_1_0/core/pt_br/img/regions/icon-noxus.png",
+            "iconAbsolutePath": "http://dd.b.pvp.net/1_2_0/core/pt_br/img/regions/icon-noxus.png",
             "name": "Noxus",
             "nameRef": "Noxus"
         },
         {
             "abbreviation": "DE",
-            "iconAbsolutePath": "http://dd.b.pvp.net/1_1_0/core/pt_br/img/regions/icon-demacia.png",
+            "iconAbsolutePath": "http://dd.b.pvp.net/1_2_0/core/pt_br/img/regions/icon-demacia.png",
             "name": "Demacia",
             "nameRef": "Demacia"
         },
         {
             "abbreviation": "FR",
-            "iconAbsolutePath": "http://dd.b.pvp.net/1_1_0/core/pt_br/img/regions/icon-freljord.png",
+            "iconAbsolutePath": "http://dd.b.pvp.net/1_2_0/core/pt_br/img/regions/icon-freljord.png",
             "name": "Freljord",
             "nameRef": "Freljord"
         },
         {
             "abbreviation": "SI",
-            "iconAbsolutePath": "http://dd.b.pvp.net/1_1_0/core/pt_br/img/regions/icon-shadowisles.png",
+            "iconAbsolutePath": "http://dd.b.pvp.net/1_2_0/core/pt_br/img/regions/icon-shadowisles.png",
             "name": "Ilhas das Sombras",
             "nameRef": "ShadowIsles"
         },
         {
             "abbreviation": "IO",
-            "iconAbsolutePath": "http://dd.b.pvp.net/1_1_0/core/pt_br/img/regions/icon-ionia.png",
+            "iconAbsolutePath": "http://dd.b.pvp.net/1_2_0/core/pt_br/img/regions/icon-ionia.png",
             "name": "Ionia",
             "nameRef": "Ionia"
         },
         {
             "abbreviation": "BW",
-            "iconAbsolutePath": "http://dd.b.pvp.net/1_1_0/core/pt_br/img/regions/icon-bilgewater.png",
+            "iconAbsolutePath": "http://dd.b.pvp.net/1_2_0/core/pt_br/img/regions/icon-bilgewater.png",
             "name": "Águas de Sentina",
             "nameRef": "Bilgewater"
         },
         {
             "abbreviation": "PZ",
-            "iconAbsolutePath": "http://dd.b.pvp.net/1_1_0/core/pt_br/img/regions/icon-piltoverzaun.png",
+            "iconAbsolutePath": "http://dd.b.pvp.net/1_2_0/core/pt_br/img/regions/icon-piltoverzaun.png",
             "name": "Piltover e Zaun",
             "nameRef": "PiltoverZaun"
         }
@@ -387,6 +432,24 @@
             "supertype": "",
             "associatedCardRefs": [],
             "collectible": true
+        },
+        {
+            "name": "Pacto Vermelho",
+            "cardCode": "01NX006T4",
+            "cardImg": "/data/pt_br/cards/01NX006T4.webp",
+            "flavorText": "\"Delicioso.\" – Vladimir",
+            "levelupDescription": "",
+            "regionRef": "Noxus",
+            "keywordRefs": [
+                "Skill"
+            ],
+            "spellSpeedRef": "",
+            "rarityRef": "None",
+            "supertype": "",
+            "associatedCardRefs": [
+                "01NX006"
+            ],
+            "collectible": false
         },
         {
             "name": "Anime-se! de Jinx",
@@ -2675,7 +2738,7 @@
             "cardCode": "01PZ036",
             "cardImg": "/data/pt_br/cards/01PZ036.webp",
             "flavorText": "\"Óculos? Confere. Lenço? Confere. Manopla-incrível-com-recursos-mágicos-que-eu-não-entendo-totalmente? Confere, confere... e confere!\"",
-            "levelupDescription": "Você alvejou unidades inimigas 8+ vezes<style=Variable></style>.",
+            "levelupDescription": "Você alvejou inimigos 8+ vezes<style=Variable></style>.",
             "regionRef": "PiltoverZaun",
             "keywordRefs": [
                 "Elusive"
@@ -2985,8 +3048,8 @@
             "typeRef": "Unit",
             "supertype": "Campeão",
             "associatedCardRefs": [
-                "01IO032T2",
-                "01IO032"
+                "01IO032",
+                "01IO032T2"
             ],
             "collectible": false
         },
@@ -4178,9 +4241,9 @@
             "levelupDescription": "",
             "regionRef": "Demacia",
             "keywordRefs": [
-                "Slow",
                 "SpellOverwhelm",
-                "Fleeting"
+                "Fleeting",
+                "Slow"
             ],
             "spellSpeedRef": "Slow",
             "rarityRef": "None",
@@ -5346,24 +5409,6 @@
             "collectible": true
         },
         {
-            "name": "Golpe Fatal",
-            "cardCode": "01IO007T1",
-            "cardImg": "/data/pt_br/cards/01IO007T1.webp",
-            "flavorText": "\"Quando a noite cai, as sombras crescem e as vidas encurtam...\"",
-            "levelupDescription": "",
-            "regionRef": "Ionia",
-            "keywordRefs": [
-                "Skill"
-            ],
-            "spellSpeedRef": "",
-            "rarityRef": "None",
-            "supertype": "",
-            "associatedCardRefs": [
-                "01IO007"
-            ],
-            "collectible": false
-        },
-        {
             "name": "Místico Selvagem",
             "cardCode": "01FR047",
             "cardImg": "/data/pt_br/cards/01FR047.webp",
@@ -5558,7 +5603,7 @@
             "typeRef": "Unit",
             "supertype": "Campeão",
             "associatedCardRefs": [
-                "01NX006T2",
+                "01NX006T4",
                 "01NX006",
                 "01NX006T3"
             ],
@@ -6419,7 +6464,7 @@
             "cardCode": "01NX006",
             "cardImg": "/data/pt_br/cards/01NX006.webp",
             "flavorText": "Brutal. Frio. Cruel. Intrigante. Perspicaz. Charmoso.\nIrresistível...",
-            "levelupDescription": "6+ de seus seguidores aliados sobreviveram a algum dano<style=Variable></style>.",
+            "levelupDescription": "6+ de seus aliados sobreviveram a algum dano<style=Variable></style>.",
             "regionRef": "Noxus",
             "keywordRefs": [],
             "spellSpeedRef": "",
@@ -8070,7 +8115,9 @@
             "rarityRef": "Rare",
             "typeRef": "Spell",
             "supertype": "",
-            "associatedCardRefs": [],
+            "associatedCardRefs": [
+                "02PZ004"
+            ],
             "collectible": true
         },
         {
@@ -8216,7 +8263,7 @@
             "regionRef": "Ionia",
             "keywordRefs": [],
             "spellSpeedRef": "",
-            "rarityRef": "Common",
+            "rarityRef": "None",
             "typeRef": "Unit",
             "supertype": "",
             "associatedCardRefs": [
@@ -8833,8 +8880,8 @@
             "supertype": "Campeão",
             "associatedCardRefs": [
                 "02BW026T2",
-                "02BW026T5",
                 "02BW026T4",
+                "02BW026T5",
                 "02BW026",
                 "02BW026T1"
             ],
@@ -8903,7 +8950,7 @@
                 "Lifesteal"
             ],
             "spellSpeedRef": "",
-            "rarityRef": "Common",
+            "rarityRef": "None",
             "typeRef": "Unit",
             "supertype": "",
             "associatedCardRefs": [
@@ -8981,30 +9028,32 @@
             "collectible": true
         },
         {
-            "name": "Suboficial B",
+            "name": "Suboficial",
             "cardCode": "02BW008T02",
             "cardImg": "/data/pt_br/cards/02BW008T02.webp",
-            "flavorText": "",
+            "flavorText": "Ele descobriu que poucas coisas motivavam tanto um marinheiro quanto um estopim aceso.",
             "levelupDescription": "",
             "regionRef": "Bilgewater",
             "keywordRefs": [],
             "spellSpeedRef": "",
-            "rarityRef": "Common",
+            "rarityRef": "Rare",
             "typeRef": "Unit",
             "supertype": "",
-            "associatedCardRefs": [],
+            "associatedCardRefs": [
+                "02BW032T1"
+            ],
             "collectible": false
         },
         {
-            "name": "Suboficial A",
+            "name": "Suboficial",
             "cardCode": "02BW008T01",
             "cardImg": "/data/pt_br/cards/02BW008T01.webp",
-            "flavorText": "",
+            "flavorText": "Ele descobriu que poucas coisas motivavam tanto um marinheiro quanto um estopim aceso.",
             "levelupDescription": "",
             "regionRef": "Bilgewater",
             "keywordRefs": [],
             "spellSpeedRef": "",
-            "rarityRef": "Common",
+            "rarityRef": "Rare",
             "typeRef": "Unit",
             "supertype": "",
             "associatedCardRefs": [
@@ -9197,6 +9246,7 @@
             "supertype": "Campeão",
             "associatedCardRefs": [
                 "02PZ008T2",
+                "02PZ004",
                 "02PZ008T1"
             ],
             "collectible": true
@@ -9572,7 +9622,7 @@
                 "Skill"
             ],
             "spellSpeedRef": "",
-            "rarityRef": "Common",
+            "rarityRef": "None",
             "supertype": "",
             "associatedCardRefs": [],
             "collectible": false
@@ -9645,8 +9695,8 @@
             "supertype": "Campeão",
             "associatedCardRefs": [
                 "02BW026T2",
-                "02BW026T5",
                 "02BW026T4",
+                "02BW026T5",
                 "02BW026T3",
                 "02BW026T1"
             ],
@@ -9787,7 +9837,7 @@
                 "Skill"
             ],
             "spellSpeedRef": "",
-            "rarityRef": "Common",
+            "rarityRef": "None",
             "supertype": "",
             "associatedCardRefs": [
                 "02BW032T1"
@@ -10474,7 +10524,8 @@
             "supertype": "Campeão",
             "associatedCardRefs": [
                 "02PZ008",
-                "02PZ008T2"
+                "02PZ008T2",
+                "02PZ004"
             ],
             "collectible": false
         },
