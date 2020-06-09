@@ -12,8 +12,12 @@
     }
 
     .filter-container {
-        margin: 32px;
+        margin: 32px 32px 0;
         width: 264px;
+
+        + .filter-container {
+            margin: 16px 32px 0;
+        }
         
         h3 {
             flex: 1;

@@ -1,16 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useDispatch } from 'react-redux'
 import ReactHtmlParser from 'react-html-parser'
 import { Icon } from 'components'
+import { actions as actionsFilters } from 'store/ducks/filters'
 
-const FilterItem = ({ children, type, callback }) => {
-    const [active, setActive] = useState(false)
+const FilterItem = ({ children, type, active }) => {
+    const dispacth = useDispatch()
+
+    const toggleFilter = () => {
+        dispacth(actionsFilters.toogleFilter(type))
+    }
 
     if (children) {
         return (
             <div
-                onClick={() => {
-                    setActive(!active)
-                }}
+                onClick={toggleFilter}
                 className={`filter-item ${active ? 'filter-active' : ''}`}>
                 <Icon name={type} />
                 <span>{ReactHtmlParser(children)}</span>

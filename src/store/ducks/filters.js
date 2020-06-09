@@ -2,8 +2,7 @@ export const types = {
     SET_REGIONS: "SET_REGIONS",
     SET_RARITIES: "SET_RARITIES",
     SET_TYPES: "SET_TYPES",
-    TOOGLE_REGION_FILTER: "TOOGLE_REGION_FILTER",
-    ALL_REGION_FILTER: "ALL_REGION_FILTER",
+    TOOGLE_FILTER: "TOOGLE_FILTER"
 }
 
 export const actions = {
@@ -19,13 +18,10 @@ export const actions = {
         type: types.SET_TYPES,
         data: data,
     }),
-    toogleRegionFilter: (name) => ({
-        type: types.TOOGLE_REGION_FILTER,
-        ref: name,
+    toogleFilter: (type, isActive) => ({
+        type: types.TOOGLE_FILTER,
+        ref: type,
     }),
-    allRegionFilter: () => ({
-        type: types.ALL_REGION_FILTER,
-    })
 }
 
 const INITIAL_STATE = {
@@ -47,19 +43,22 @@ export const reducer = (state = INITIAL_STATE, action) => {
         case types.SET_TYPES:
             newState.types = handleTypes(action.data)
             break
-        case types.TOOGLE_REGION_FILTER:
-            newState.regions = newState.regions.map(item => {
-                if (item.nameRef === action.ref) {
-                    item.active = !item.active
-                }
-                return item
-            })
-            break
-        case types.ALL_REGION_FILTER:
-            newState.regions = newState.regions.map(item => {
-                item.active = true
-                return item
-            })
+        case types.TOOGLE_FILTER:
+            let all = newState.regions.find(item => item.nameRef === 'All')
+            let found = newState.regions.find(item => item.nameRef === action.ref)
+
+            if (all === found && !found.active) {
+                newState.regions = newState.regions.map(item => {
+                    item.active = false
+                    return item
+                })
+                found.active = true
+            } else {
+                found.active = !found.active
+                all.active = false
+            }
+
+            console.log(newState.regions)
             break
         default:
     }
@@ -71,17 +70,18 @@ const handleRegions = (data) => data.map(item => {
     return {
         name: item.name,
         nameRef: item.nameRef,
-        active: true,
+        active: false,
     }
 })
 
-const handleRarities = (data) => data.map(item => {
+const handleRarities = (data) => data.filter(item => {
     if (item.nameRef === 'None') return false
-
+    return true
+}).map(item => {
     return {
         name: item.name,
         nameRef: item.nameRef,
-        active: true,
+        active: false,
     }
 })
 
@@ -89,6 +89,6 @@ const handleTypes = (data) => data.map(item => {
     return {
         name: item.name,
         nameRef: item.nameRef,
-        active: true,
+        active: false,
     }
 })
