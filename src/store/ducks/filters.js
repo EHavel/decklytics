@@ -18,7 +18,7 @@ export const actions = {
         type: types.SET_TYPES,
         data: data,
     }),
-    toogleFilter: (type, isActive) => ({
+    toogleFilter: (type) => ({
         type: types.TOOGLE_FILTER,
         ref: type,
     }),
@@ -45,20 +45,23 @@ export const reducer = (state = INITIAL_STATE, action) => {
             break
         case types.TOOGLE_FILTER:
             let all = newState.regions.find(item => item.nameRef === 'All')
+
             let found = newState.regions.find(item => item.nameRef === action.ref)
+            if (!found) found = newState.rarities.find(item => item.nameRef === action.ref)
+            if (!found) found = newState.types.find(item => item.nameRef === action.ref)
 
-            if (all === found && !found.active) {
-                newState.regions = newState.regions.map(item => {
-                    item.active = false
-                    return item
-                })
-                found.active = true
-            } else {
-                found.active = !found.active
-                all.active = false
+            if (found) {
+                if (all === found && !found.active) {
+                    newState.regions = newState.regions.map(item => {
+                        item.active = false
+                        return item
+                    })
+                    found.active = true
+                } else {
+                    found.active = !found.active
+                    all.active = false
+                }
             }
-
-            console.log(newState.regions)
             break
         default:
     }
