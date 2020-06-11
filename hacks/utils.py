@@ -98,3 +98,19 @@ class Utils:
 
         return data
 
+    def mapperRegion(i):
+        data = {}
+        data['abbreviation'] = i['abbreviation']
+        data['name'] = i['name']
+        data['nameRef'] = i['nameRef']
+
+        return data
+
+    def createRegion(abbr, name, ref):
+        data = {}
+        data['abbreviation'] = abbr
+        data['name'] = name
+        data['nameRef'] = ref
+
+        return data
+

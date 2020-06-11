@@ -10,6 +10,7 @@
         "node-sass": "^4.13.1",
         "react": "^16.13.0",
         "react-dom": "^16.13.0",
+        "react-helmet": "^6.1.0",
         "react-html-parser": "^2.0.2",
         "react-lazy-load-image-component": "^1.4.3",
         "react-lazyload": "^2.6.7",

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react'
+import Helmet from 'react-helmet'
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import {
@@ -65,6 +66,9 @@ const CardDetailPage = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Decklytics: Cards Details</title>
+            </Helmet>
             <Header />
             <div className="page-full">
                 <div className="card-details-container">

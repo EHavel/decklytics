@@ -31,17 +31,21 @@ for locale in configs['locales']:
     localeFolder = '%s%s/' % (dataFolder, locale['code'])
     Utils.resetFolder(localeFolder)
     
-    optimizeinputFolder = '%s%s/img/cards/' % (baseExtractFolder, locale['code'])
+    optimizeSet1Folder = '%sset1-%s/%s/img/cards/' % (baseExtractFolder, locale['code'], locale['code'])
+    optimizeSet2Folder = '%sset2-%s/%s/img/cards/' % (baseExtractFolder, locale['code'], locale['code'])
 
     optimizeOutputFolder = '%scards/' % localeFolder
     Utils.resetFolder(optimizeOutputFolder)
     
-    Utils.optimizeImages(optimizeinputFolder, optimizeOutputFolder)
+    print('Optimize images set 1')
+    Utils.optimizeImages(optimizeSet1Folder, optimizeOutputFolder)
+    print('Optimize images set 2')
+    Utils.optimizeImages(optimizeSet2Folder, optimizeOutputFolder)
 
     # Handle data
-    coreJson = Utils.openJson('%s%s/data/globals-%s.json' % (baseExtractFolder, locale['code'], locale['code']))
-    set1Json = Utils.openJson('%s%s/data/set1-%s.json' % (baseExtractFolder, locale['code'], locale['code']))
-    set2Json = Utils.openJson('%s%s/data/set2-%s.json' % (baseExtractFolder, locale['code'], locale['code']))
+    coreJson = Utils.openJson('%score-%s/%s/data/globals-%s.json' % (baseExtractFolder, locale['code'], locale['code'], locale['code']))
+    set1Json = Utils.openJson('%sset1-%s/%s/data/set1-%s.json' % (baseExtractFolder, locale['code'], locale['code'], locale['code']))
+    set2Json = Utils.openJson('%sset2-%s/%s/data/set2-%s.json' % (baseExtractFolder, locale['code'], locale['code'], locale['code']))
 
     dic = {}
     dic['cardGallery'] = strings['cardGallery'][locale['code']]
@@ -69,10 +73,18 @@ for locale in configs['locales']:
     data = {}
     data['dictionary'] = dic
     data['keywords'] = coreJson['keywords']
-    data['regions'] = coreJson['regions']
+
+    # Handle Regions
+    data['regions'] = []
+    for item in coreJson['regions']:
+        data['regions'].append(Utils.mapperRegion(item))
+    data['regions'].append(Utils.createRegion('LL', strings['allRegions'][locale['code']], 'All'))
+
     data['spellSpeeds'] = coreJson['spellSpeeds']
     data['rarities'] = coreJson['rarities']
     data['types'] = extras['types']
+
+    # Handle Cards
     data['cards'] = []
     for item in set1Json:
         data['cards'].append(Utils.mapperCard(item, locale['code'], extras))
