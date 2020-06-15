@@ -7,7 +7,10 @@ const Filter = () => {
     const filters = useSelector(state => state.filters)
 
     const renderFilters = (arr) => arr.map(item => (
-        <FilterItem type={item.nameRef} active={item.active}>{item.name}</FilterItem>
+        <FilterItem
+            key={item.nameRef}
+            type={item.nameRef}
+            active={item.active}>{item.name}</FilterItem>
     ))
 
     return (

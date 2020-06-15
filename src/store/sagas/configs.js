@@ -24,7 +24,7 @@ function* loadConfigs() {
     const state = yield select();
 
     try {
-        const configs = yield call(getConfigsApi, state.translator.selected.code)
+        const configs = yield call(getConfigsApi, state.translator.code)
 
         yield put(actionsCards.setCards(configs.cards))
 
@@ -41,5 +41,7 @@ function* loadConfigs() {
 
 export default [
     takeEvery(typesTranslator.IDENTIFY_LANGUAGE, loadConfigs),
-    takeEvery(typesTranslator.SELECT_LANGUAGE, loadConfigs)
+    takeEvery(typesTranslator.SELECT_LANGUAGE, loadConfigs),
+    takeEvery(typesTranslator.PATH_LANGUAGE, loadConfigs),
+    takeEvery(typesTranslator.TRANSLATOR_IDENTIFY, loadConfigs),
 ]

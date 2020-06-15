@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 import { actions as actionsTranslator } from 'store/ducks/translator'
 import {
     Header,
@@ -8,14 +8,12 @@ import {
     Filter,
 } from '../components'
 
-const CardsPage = () => {
+const MainPage = () => {
     const dispacth = useDispatch()
-    const { languagePath } = useParams()
-    console.log("languagePath", languagePath)
 
     useEffect(() => {
-        console.log("useEffect", languagePath)
-        dispacth(actionsTranslator.identify(languagePath))
+        const browerLanguage = (navigator.language || navigator.browserLanguage)
+        dispacth(actionsTranslator.identifyLanguage(browerLanguage))
     }, [dispacth])
 
     return (
@@ -27,4 +25,4 @@ const CardsPage = () => {
     )
 }
 
-export default CardsPage
+export default MainPage

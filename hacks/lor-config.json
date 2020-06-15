@@ -41,6 +41,23 @@
             }
         },
         {
+            "code": "zh_tw",
+            "name": "繁體中文",
+            "flag": "🇨🇳",
+            "extras": {
+                "types": [
+                    {
+                        "name": "Unidade",
+                        "nameRef": "Unit"
+                    },
+                    {
+                        "name": "Feitiço",
+                        "nameRef": "Spell"
+                    }
+                ]
+            }
+        },
+        {
             "code": "ja_jp",
             "name": "日本語",
             "flag": "🇯🇵",

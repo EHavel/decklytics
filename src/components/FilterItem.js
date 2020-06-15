@@ -16,7 +16,7 @@ const FilterItem = ({ children, type, active }) => {
             <div
                 onClick={toggleFilter}
                 className={`filter-item ${active ? 'filter-active' : ''}`}>
-                <Icon name={type} />
+                <Icon name={type} alt={ReactHtmlParser(children)} />
                 <span>{ReactHtmlParser(children)}</span>
             </div>
         )

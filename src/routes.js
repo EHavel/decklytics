@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-import { actions as actionsTranslator } from 'store/ducks/translator'
+import React from 'react'
+import identifyLanguage from 'config/languages'
 import History from 'helpers/History'
 import {
     Route,
@@ -12,23 +11,19 @@ import {
 //Pages
 import CardsPage from 'pages/CardsPage'
 import CardDetailPage from 'pages/CardDetailPage'
-// import DeckDetailsPage from 'pages/DeckDetailsPage'
+import NoMatch from 'pages/NoMatch'
 
 const Routes = () => {
-    const dispacth = useDispatch()
-
-    useEffect(() => {
-        const browerLanguage = (navigator.language || navigator.browserLanguage)
-        dispacth(actionsTranslator.identifyLanguage(browerLanguage))
-    }, [dispacth])
+    const browerlanguage = (navigator.language || navigator.browserLanguage)
+    const defaultLanguage = identifyLanguage(browerlanguage)
 
     return (
         <Router history={History}>
             <Switch>
-                <Route exact path='/' component={CardsPage} />
-                <Route exact path='/card/:id' component={CardDetailPage} />
-                {/* <Route exact path='/deck/:code' component={DeckDetailsPage} /> */}
-                <Redirect from='*' to='/' />
+                <Redirect exact path='/' to={`${defaultLanguage.path}/`} />
+                <Route path='/:languagePath/' component={CardsPage} />
+                {/* <Route path='/:languagePath/card/:id' component={CardDetailPage} />
+                <Route from='*' component={NoMatch} /> */}
             </Switch>
         </Router>
     )

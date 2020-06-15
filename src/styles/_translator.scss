@@ -11,10 +11,10 @@
     color: $color-2;
     font-size: 1.4em;
     font-weight: 400;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     
     &:hover {
-        border-bottom: 1px solid $color-5;
+        border-bottom: 2px solid $color-5;
     }
 
     svg {
@@ -41,13 +41,15 @@
     right: 0;
     background: $color-1;
     border-left: 1px solid $color-4;
-    border-bottom: 1px solid $color-4;
+    border-bottom: 2px solid $color-4;
 
     .language-option {
-        height: 40px;
+        line-height: 40px;
+        height: auto;
+        text-decoration: none;
 
         &:hover {
-            border-bottom: 1px solid transparent;
+            border-bottom: 2px solid transparent;
         }
     }
 }

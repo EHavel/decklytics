@@ -1,6 +1,10 @@
+import identifyLanguage from 'config/languages'
+
 export const types = {
     IDENTIFY_LANGUAGE: "IDENTIFY_LANGUAGE",
     SELECT_LANGUAGE: "SELECT_LANGUAGE",
+    PATH_LANGUAGE: "PATH_LANGUAGE",
+    TRANSLATOR_IDENTIFY: "TRANSLATOR_IDENTIFY",
 }
 
 export const actions = {
@@ -12,46 +16,19 @@ export const actions = {
         type: types.SELECT_LANGUAGE,
         name: name,
         code: code,
-    })
+    }),
+    pathLanguage: (path) => ({
+        type: types.PATH_LANGUAGE,
+        path: path,
+    }),
+    identify: (code) => ({
+        type: types.TRANSLATOR_IDENTIFY,
+        code: code,
+    }),
 }
 
-const INITIAL_STATE = {
-    selected: {},
-    languages: [
-        {
-            name: "English",
-            code: "en_us",
-        },
-        {
-            name: "Português",
-            code: "pt_br",
-        },
-        {
-            name: "Deutsch",
-            code: "de_de",
-        },
-        {
-            name: "Español",
-            code: "es_es",
-        },
-        {
-            name: "Français",
-            code: "fr_fr",
-        },
-        {
-            name: "Italiano",
-            code: "it_it",
-        },
-        {
-            name: "日本語",
-            code: "ja_jp",
-        },
-        {
-            name: "한국어",
-            code: "ko_kr",
-        }
-    ]
-}
+const INITIAL_STATE = {}
+
 export const reducer = (state = INITIAL_STATE, action) => {
     let newState = JSON.parse(JSON.stringify(state))
 
@@ -60,6 +37,7 @@ export const reducer = (state = INITIAL_STATE, action) => {
             let initialSelected = {
                 name: "English",
                 code: "en_us",
+                path: "en-us",
             }
 
             let list = newState.languages.filter(item =>
@@ -73,6 +51,13 @@ export const reducer = (state = INITIAL_STATE, action) => {
         case types.SELECT_LANGUAGE:
             newState.selected.name = action.name
             newState.selected.code = action.code
+            break
+        case types.PATH_LANGUAGE:
+            console.log("OPA")
+            newState.selected = newState.languages.find(e => e.path === action.path)
+            break
+        case types.TRANSLATOR_IDENTIFY:
+            newState = identifyLanguage(action.code)
             break
         default:
     }
