@@ -7,7 +7,8 @@
         "es_es": "Galería de tarjeta",
         "fr_fr": "Galerie carte",
         "it_it": "Galleria Carta",
-        "ko_kr": "카드 갤러리"
+        "ko_kr": "카드 갤러리",
+        "zh_tw": "卡畫廊"
     },
     "playNow": {
         "pt_br": "Jogar agora",
@@ -17,7 +18,8 @@
         "es_es": "Reproducir ahora",
         "fr_fr": "Joue maintenant",
         "it_it": "Riproduci ora",
-        "ko_kr": "지금 플레이"
+        "ko_kr": "지금 플레이",
+        "zh_tw": "現在播放"
     },
     "filterByRegion": {
         "pt_br": "Filtro por região",
@@ -27,7 +29,8 @@
         "es_es": "Filtro por Región",
         "fr_fr": "filtrer par région",
         "it_it": "filtra per regione",
-        "ko_kr": "지역별 필터"
+        "ko_kr": "지역별 필터",
+        "zh_tw": "按地區過濾"
     },
     "filterByRarity": {
         "pt_br": "Filtro por raridade",
@@ -37,7 +40,8 @@
         "es_es": "Filtrar por rareza",
         "fr_fr": "Filtrer par rareté",
         "it_it": "Filtra per rarità",
-        "ko_kr": "희귀별로 필터"
+        "ko_kr": "희귀별로 필터",
+        "zh_tw": "依稀有篩選"
     },
     "filterByType": {
         "pt_br": "Filtro por tipo",
@@ -47,7 +51,8 @@
         "es_es": "Filtrar por tipo",
         "fr_fr": "Filtrer par type",
         "it_it": "Filtro per tipo",
-        "ko_kr": "유형별로 필터링"
+        "ko_kr": "유형별로 필터링",
+        "zh_tw": "按類型過濾"
     },
     "allRegions": {
         "pt_br": "Todas regiões",
@@ -57,7 +62,8 @@
         "es_es": "Todas las regiones",
         "fr_fr": "Toutes les régions",
         "it_it": "Tutte le regioni",
-        "ko_kr": "모든 지역"
+        "ko_kr": "모든 지역",
+        "zh_tw": "所有地區"
     },
     "levelUp": {
         "pt_br": "Subir de nível",
@@ -67,7 +73,8 @@
         "es_es": "Elevar a mismo nivel",
         "fr_fr": "Niveau supérieur",
         "it_it": "Level up",
-        "ko_kr": "레벨 업"
+        "ko_kr": "레벨 업",
+        "zh_tw": "升級"
     },
     "associatedCards": {
         "pt_br": "Cartas associadas",
@@ -77,6 +84,7 @@
         "es_es": "tarjetas asociadas",
         "fr_fr": "cartes associées",
         "it_it": "carte associate",
-        "ko_kr": "관련 카드"
+        "ko_kr": "관련 카드",
+        "zh_tw": "關聯卡"
     }
 }

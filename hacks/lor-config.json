@@ -47,11 +47,11 @@
             "extras": {
                 "types": [
                     {
-                        "name": "Unidade",
+                        "name": "單元",
                         "nameRef": "Unit"
                     },
                     {
-                        "name": "Feitiço",
+                        "name": "拼寫",
                         "nameRef": "Spell"
                     }
                 ]
