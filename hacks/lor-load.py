@@ -13,7 +13,7 @@ print ("   \ \_____\  \ \_____\  \ \_\ \_\            ")
 print ("    \/_____/   \/_____/   \/_/ /_/            ")
 print ("                                              ")
 
-configs = Utils.openJson('./hacks/lor-config-2.json')
+configs = Utils.openJson('./hacks/lor-config.json')
 
 baseFolder = './hacks/__temp/'
 baseBundleFolder = baseFolder + 'bundle/'
