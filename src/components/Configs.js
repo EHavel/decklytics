@@ -1,8 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { useParams } from 'react-router-dom'
+import { actions as actionsTranslator } from 'store/ducks/translator'
 import Helmet from 'react-helmet'
-import { useSelector } from 'react-redux'
 
-function Seo() {
+function Configs() {
+
+    const dispacth = useDispatch()
+    const { languagePath } = useParams()
+
+    useEffect(() => {
+        dispacth(actionsTranslator.identify(languagePath))
+    }, [dispacth])
+
     return (
         <>
             <Helmet>
@@ -15,4 +25,4 @@ function Seo() {
     )
 }
 
-export default Seo
+export default Configs

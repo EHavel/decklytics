@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import ReactHtmlParser from 'react-html-parser'
+import { strip } from 'helpers/Utils'
 import { Icon } from 'components'
 import { actions as actionsFilters } from 'store/ducks/filters'
 
@@ -16,8 +16,8 @@ const FilterItem = ({ children, type, active }) => {
             <div
                 onClick={toggleFilter}
                 className={`filter-item ${active ? 'filter-active' : ''}`}>
-                <Icon name={type} alt={ReactHtmlParser(children)} />
-                <span>{ReactHtmlParser(children)}</span>
+                <Icon name={type} alt={strip(children)} />
+                <span>{strip(children)}</span>
             </div>
         )
     } else {

@@ -5,7 +5,7 @@ import {
     Filter,
 } from '../components'
 
-const NoMatch = () => {
+const PageNoMatch = () => {
 
     return (
         <>
@@ -15,4 +15,4 @@ const NoMatch = () => {
     )
 }
 
-export default NoMatch
+export default PageNoMatch

@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import logo from '../assets/logo.png'
 import logoLor from '../assets/lor/logo.png'
 import { Link } from 'react-router-dom'
-import { Translator, ImportDeck, Seo } from 'components'
+import { Translator, ImportDeck } from 'components'
 
 function Header() {
     const dic = useSelector(state => state.dic)
@@ -11,7 +11,6 @@ function Header() {
 
     return (
         <>
-            {/* <Seo /> */}
             <header>
                 <Link to="/" className='logo'>
                     <img src={logo} alt="Decklytics: Deck builder for mobile games" />

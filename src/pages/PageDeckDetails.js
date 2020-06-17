@@ -6,7 +6,7 @@ import {
     Header,
 } from '../components'
 
-const DeckDetailsPage = () => {
+const PageDeckDetails = () => {
     const cards = useSelector(state => state.cards)
     const [deck, setDeck] = useState([])
     const { code } = useParams()
@@ -40,4 +40,4 @@ const DeckDetailsPage = () => {
         </div>
     )
 }
-export default DeckDetailsPage
+export default PageDeckDetails

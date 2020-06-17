@@ -53,7 +53,6 @@ export const reducer = (state = INITIAL_STATE, action) => {
             newState.selected.code = action.code
             break
         case types.PATH_LANGUAGE:
-            console.log("OPA")
             newState.selected = newState.languages.find(e => e.path === action.path)
             break
         case types.TRANSLATOR_IDENTIFY:

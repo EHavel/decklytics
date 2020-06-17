@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const api = axios.create({
-    baseURL: "../data/",
+    baseURL: "/data/",
     headers: {
         "Accept": "application/json",
         "Content-Type": "application/json; charset=utf-8"
@@ -9,7 +9,7 @@ const api = axios.create({
 })
 
 const getConfigUrl = (languageCode) => {
-    return languageCode + '/data.json'
+    return `/${languageCode}/data.json`
 }
 
 export const getConfigs = async (code) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactHtmlParser from 'react-html-parser'
+import { strip } from 'helpers/Utils'
 import { Icon } from 'components'
 
 const TitleDivider = ({ children, icon, subtitle }) => {
@@ -11,7 +11,7 @@ const TitleDivider = ({ children, icon, subtitle }) => {
                     <Icon name={icon} />
                     <h3>{children}</h3>
                 </div>
-                <p>{ReactHtmlParser(subtitle)}</p>
+                <p>{strip(subtitle)}</p>
             </div>
             <span className="divider"></span>
         </div>

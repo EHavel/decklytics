@@ -3,10 +3,10 @@ import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { CardLink } from 'components'
 
-function Cards() {
+function CardList() {
     const cards = useSelector(state => state.cards)
     const filters = useSelector(state => state.filters)
-    const { language } = useParams()
+    const { languagePath } = useParams()
 
     const check = (arr, ref) => {
         let found = arr.find(item => item.nameRef === ref)
@@ -77,7 +77,7 @@ function Cards() {
             if (finalList.length > 0) {
                 return (
                     <div className="cards-container">{
-                        finalList.map(item => (<CardLink key={item.cardCode} card={item} basePath={language} />))
+                        finalList.map(item => (<CardLink key={item.cardCode} card={item} />))
                     }</div>
                 )
             } else {
@@ -93,4 +93,4 @@ function Cards() {
     )
 }
 
-export default Cards
+export default CardList

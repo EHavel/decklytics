@@ -9,9 +9,9 @@ import {
 } from 'react-router-dom'
 
 //Pages
-import CardsPage from 'pages/CardsPage'
-import CardDetailPage from 'pages/CardDetailPage'
-import NoMatch from 'pages/NoMatch'
+import PageCards from 'pages/PageCards'
+import PageCardDetail from 'pages/PageCardDetail'
+import PageNoMatch from 'pages/PageNoMatch'
 
 const Routes = () => {
     const browerlanguage = (navigator.language || navigator.browserLanguage)
@@ -21,9 +21,9 @@ const Routes = () => {
         <Router history={History}>
             <Switch>
                 <Redirect exact path='/' to={`${defaultLanguage.path}/`} />
-                <Route path='/:languagePath/' component={CardsPage} />
-                {/* <Route path='/:languagePath/card/:id' component={CardDetailPage} />
-                <Route from='*' component={NoMatch} /> */}
+                <Route exact path='/:languagePath' component={PageCards} />
+                <Route exact path='/:languagePath/card/:cardCode' component={PageCardDetail} />
+                {/* <Route from='*' component={PageNoMatch} /> */}
             </Switch>
         </Router>
     )
