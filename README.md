@@ -1,5 +1,7 @@
 ![Decklytics](logo.png)
 
+[WIP](https://github.com/EHavel/decklytics/issues?q=is%3Aopen+is%3Aissue+label%3Awip)
+
 ## O Projeto ##
 Site de criação e analise de deck e suas características para varios jogos.
 
