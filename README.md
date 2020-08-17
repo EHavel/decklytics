@@ -2,6 +2,7 @@
 
 [![Abrir Figma](https://imgur.com/1Wt51c6.png)](https://www.figma.com/file/5AtjHZtcVGIjLSMTjp01w6/Decklytics)
 [![Abrir Firebase](https://imgur.com/qCWp9uv.png)](https://console.firebase.google.com/project/decklytics)
+[![Abrir Analytics](https://imgur.com/ictYYW5.png)](https://analytics.google.com/analytics/web/?hl=pt#/p231174916/reports/home?params=_u..nav%3Dga1-experimental)
 
 [WIP](https://github.com/EHavel/decklytics/issues?q=is%3Aopen+is%3Aissue+label%3Awip)
 
