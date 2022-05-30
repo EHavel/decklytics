@@ -93,3 +93,11 @@ Os pacotes configuráveis ​​contêm ativos e dados para cartões liberados e
 * https://leagueoflegends.fandom.com/wiki
 
 https://leagueoflegends.fandom.com/wiki/Card_Back_(Legends_of_Runeterra)
+
+## Referencias ##
+- [Image Processing in Python with Pillow](https://auth0.com/blog/image-processing-in-python-with-pillow/)
+- [Download Returned Zip file from URL](https://stackoverflow.com/questions/9419162/download-returned-zip-file-from-url)
+- [Python PIL | Image.convert() Method](https://www.geeksforgeeks.org/python-pil-image-convert-method/)
+- [Unzipping files in Python](https://stackoverflow.com/questions/3451111/unzipping-files-in-python)
+- [Reading and Writing JSON to a File in Python](https://stackabuse.com/reading-and-writing-json-to-a-file-in-python/)
+- [Nothing Better Than Mixture of Bash Scripting and Python](https://www.educba.com/bash-shell-programming-with-python/)
